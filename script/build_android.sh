@@ -1,5 +1,5 @@
 #!/bin/sh
-#--disable-avdevice
+#ndk工具的路径
 NDK=/Users/heli/Library/Android/sdk/ndk/android-ndk-r14b
 export PATH=$PATH:$NDK
 SYSROOT=$NDK/platforms/android-21/arch-arm
@@ -31,6 +31,7 @@ make -j4
 make install
 }
 CPU=armv7-a
+#so文件最终生成路径
 PREFIX=$(pwd)/android/$CPU
 ADDI_CFLAGS="-marm"
 build_one
