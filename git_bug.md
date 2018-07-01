@@ -32,6 +32,8 @@ git config --global http.postBuffer 1048576000
 git config --global https.postBuffer 1048576000
 ```
 
+如果你提交的文件确实比较大，并且修改缓存后，还是卡在上述界面，建议你等等，大文件传输毕竟比较耗时间。
+
 3、SSL认证问题：
 
 上述日志打印后，等了半天出现了后续打印，完整log如下：
