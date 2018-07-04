@@ -33,7 +33,7 @@ Windows 7 6.1
 
 File ----->  New  -----> New Project （在这一步需要如下图所示一样勾上C++ 支持）----> Next  ----> Next  ----> Next。
 
-![](E:\study\jni_project_create.PNG)
+![](https://github.com/MrHeLi/ffmpeg-leaning/blob/master/image/jni_project_create.PNG)
 
 和普通工程创建不同的是，创建成功后，支持C/C++会多 native-lib.cpp 和 CMakeLists.txt两个文件。关于CMakeLists.txt会另起一篇讲。
 
