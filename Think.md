@@ -1375,3 +1375,56 @@
 398. peculiar
      - adj. 特殊的；独特的；奇怪的；罕见的n. 特权；特有财产
      - We might be inclined to think that the problem is **peculiar** to the United States, but examples of dear-inspired behavior fill the history books.
+
+# day37: Fear and Tradition
+
+399. intact
+
+     - adj. 完整的；原封不动的；未受损伤的
+     - They help keep **intact** the valuable lessons of the past.
+
+400. panic
+
+     - n. 恐慌，惊慌；大恐慌adj. 恐慌的；没有理由的
+     - This is the case whenever clinging to tradition represents not careful judgment that something deserves preservation but rather some internal **panic**.
+
+401. Dissection
+
+     - n. 解剖，切开；解剖体；详细查究
+     - Surly some such panic was partly responsible for the centuries long prohibition of **dissection** of the dead.
+
+402. Entreat
+
+     - vt. 恳求；请求;vi. 恳求；乞求
+     - Desipite the **entreaties** of mediacal people, who wished only to learn the secrets of the human body for fight against disease.
+
+403. Outrageous
+
+     - adj. 粗暴的；可恶的；令人吃惊的
+
+404. Sacrilegious
+
+     - adj. 该受天谴的，亵渎神明的
+     - Because being unheard of, the practice was considered **outrageous**, **sacrilegious**.
+
+405. sacred
+
+     - adj. 神的；神圣的；宗教的；庄严的
+     - The task of guarding the established ways of viewing things has always been regarded by many as a **sacred** task.
+
+406. Primitive
+
+     - adj. 原始的，远古的；简单的，粗糙的
+     - n. 原始人
+     - This is true even in primitive cultures.
+
+407. Conspiracy
+
+     - n. 阴谋；共谋；阴谋集团
+     - This reaction ws not due to any conspiracy on the part of the Trobriand chiefs.
+
+408. indoctrinate
+
+     - vt. 灌输；教导
+
+     - It is merely that the chiefs had been **indoctrinated** with an appreciation of the proper order of things, and saw it as their heavy burden to enforced the mediocrity of others.
