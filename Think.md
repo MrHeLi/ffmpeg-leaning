@@ -1428,3 +1428,44 @@
      - vt. 灌输；教导
 
      - It is merely that the chiefs had been **indoctrinated** with an appreciation of the proper order of things, and saw it as their heavy burden to enforced the mediocrity of others.
+
+# day38
+
+409. infest
+
+     - vt. 骚扰；寄生于；大批出没；大批滋生
+
+410. lice(louse)
+
+     - n. 虱子；寄生虫；卑鄙的家伙
+     - Because when I was a little girl some neighbor children were **infested** with **lice**.
+
+411. tremendous
+
+     - adj. 极大的，巨大的；惊人的；极好的
+
+     - At times a tradition may seem relatively unimportant and yet in a subtle way hold **tremendous** significance for people.
+
+412. fabric
+
+     - n. 织物；布；组织；构造；建筑物
+     - And  to challenge all was to attack the very **fabric** of civilized society.
+
+413. anarchy
+
+     - n. 无政府状态；混乱；无秩序
+
+414. ironically
+
+     - adv. 讽刺地；说反话地
+     - Ironically, they often forget very quickly.
+
+415. deplore
+
+     - vt. 谴责；悲悼；哀叹；对…深感遗憾
+     - In fact, they sometimes display the same fear and insecurity they so **deplored** in others.
+
+416. ostrasize
+
+     - vt. 放逐；排斥；按贝壳流放法放逐
+     - They ostracized and attacked those who challenged any part of his theory.
