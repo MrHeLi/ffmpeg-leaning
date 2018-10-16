@@ -1469,3 +1469,62 @@
 
      - vt. 放逐；排斥；按贝壳流放法放逐
      - They ostracized and attacked those who challenged any part of his theory.
+
+# day39: Overcoming resistance to change
+
+417. departure
+
+     - n. 离开；出发；违背
+     - The first is that all creative ideas are by definition new and unexpected **departures** from the usual and the accepted.
+
+418. impartial
+
+     - adj. 公平的，公正的；不偏不倚的
+     - The second reason is that resistance to change blocks the **impartial** judgment essential for critical thinking.
+
+419. disguise
+
+      - vt. 掩饰；假装；隐瞒;n. 伪装；假装；用作伪装的东西
+      - If your "reasons" are only excuses in **disguise**, acknowledge (at least to yourself) that you are too prejudiced to judge the idea fairly.
+
+420. tentative
+
+     - adj. 试验性的，暂定的；踌躇的n. 假设，试验
+     - The ideas listed below will give you an opportunity to reach a **tentative** conclusion.
+
+421. federal
+
+     - adj. 联邦的；同盟的；联邦政府的； 联邦制的adv. 联邦政府地
+
+422. retain
+
+     - vt. 保持；雇；记住
+
+423. Maiden
+
+     - adj. 未婚的，处女的；初次的n. 少女；处女
+     - A federal law should be passed requiring women to retain their maiden names when they marry.
+
+424. eliminate
+
+     - vt. 消除；排除
+
+425. Budget
+
+     - n. 预算，预算费vt. 安排，预定；把…编入预算
+     - All high school and college varsity sports should be **eliminated**, all varsity sports **budgets** should be used for the expansion of intramural sports programs.
+
+426. aide
+
+     - n. 助手；副官；侍从武官
+     - Retired people should be used as teachers' **aides** even if they lack college degrees.
+
+427. censor
+
+     - vt. 审查，检查；检查和删节n. 检查员；[心理] 潜意识压抑力；信件检查员
+
+428. Four-letter
+
+     - adj. 下流的；庸俗的；使用四字母忌讳词的
+
+     - In past decades college officails debated whether to **censor** student newspapers that published stories containing **four-letter** words and explicit sexual references.
