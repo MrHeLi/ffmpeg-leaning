@@ -1528,3 +1528,60 @@
      - adj. 下流的；庸俗的；使用四字母忌讳词的
 
      - In past decades college officails debated whether to **censor** student newspapers that published stories containing **four-letter** words and explicit sexual references.
+
+# day40
+
+429. Fascist
+     - n. 法西斯主义者；法西斯党员adj. 法西斯主义的，法西斯党的
+     - That doesn't give every student the right to play fascist and set editorial policy.
+430. pesky
+     - adj. 讨厌的；麻烦的
+431. buzz
+     - vt. 使嗡嗡叫；暗中散布n. 嗡嗡声
+     - If a **pesky fly buzzes** around your head, you don't fire an elephant gun at it.
+432. merit
+     - n. 优点，价值；功绩；功过vt. 值得
+     - Decide whether his suggestion has **merit**.
+433. glamorize
+     - vt. 美化；使有魅力
+     - Beer and wine commercials should be banned from television because they **glamorize** drinking, leading people to associate it with love and friendship and happiness.
+
+# day41:Chapter eight: Conformity
+
+434. Conformity is behaving the way others around us do.
+435. escalator
+     - n. （美）自动扶梯；电动扶梯
+436. hydrant
+     - n. 消防栓；水龙头；给水栓
+     - Similarly, in a handred different ways, from using the "up" **escalator** to go up, to not parking by a fire **hydrant**.
+437. rear
+     - adv. 向后；在后面n. 后面；屁股；后方部队
+     - Can we drive facing sideway or to the **rear**?
+438. frustrate
+     - vt. 挫败；阻挠；使感到灰心vi. 失败；受挫adj. 挫败的；无益的
+     - Certainly not without some **frustration**.
+439. crimp
+     - n. 卷发；皱褶；抑制；束缚
+     - The safety and comfort such conformity brings us far outweigh the **crimp** in our creativity.
+
+# day 42: Internal and external pressures to conform
+
+440. yearn
+     - vi. 渴望，向往；思念，想念；怀念
+     - As we grow older the desire to be included does not go away. It merely takes different forms. We still **yearn** for the recognition, acceptance, and approval of others.
+441. Intense
+     - adj. 强烈的；紧张的；非常的；热情的
+442. bombard
+     - vt. 轰炸；炮击n. 射石炮
+     - That yearning is **intensified** by the **bombardment** of thousands of advertisements and TV commercials.
+443. sophisticate
+     - vt. 弄复杂；使变得世故；曲解n. 久经世故的人；精通者
+444. prefabricate
+     - vt. 预先制造；预先构思；预制构件
+445. relevant
+     - adj. 相关的；切题的；中肯的；有重大关系的；有意义的，目的明确的
+     - Young teenagers trying to be **sophisticated**, and middle-aged people trying to be "**relevant**," have in common the urge to fit some **prefabricated** image.
+446. Liberal
+     - adj. 自由主义的；慷慨的；不拘泥的；宽大的n. 自由主义者
+447. conservative 
+     - adj. 保守的n. 保守派，守旧者
