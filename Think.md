@@ -1585,3 +1585,41 @@
      - adj. 自由主义的；慷慨的；不拘泥的；宽大的n. 自由主义者
 447. conservative 
      - adj. 保守的n. 保守派，守旧者
+
+# day 43
+
+448. teasing
+     - n. 戏弄
+449. campaign
+     - vi. 作战；参加竞选；参加活动n. 运动；活动；战役
+     - They may launch a teasing campaign against her.
+450. pledge
+     - n. 保证，誓言；抵押；抵押品，典当物vt. 保证，许诺；用……抵押；举杯祝……健康
+     - Ironically, even groups **pledged** to fight conformity can generate strong pressure to conform.
+451. clash
+     - n. 冲突，不协调；碰撞声，铿锵声vi. 冲突，抵触；砰地相碰撞，发出铿锵声
+     - The urge to conform on occasion **clashes** with the tendency to resist change.
+452. advocate
+     - vt. 提倡，主张，拥护n. 提倡者；支持者；律师
+     - If the group we are **advocates** an idea or action that is new and strange to us, we can be torn between seeking the group's acceptance and maintaining the security of familiar ideas and behavior.
+
+# day 44: GroupThink
+
+453. cripple
+     - vt. 削弱；使跛；使残废adj. 跛的；残废的
+     - The urge to conform can cripple think.
+454. escalate
+     - vi. 逐步增强；逐步升高vt. 使逐步上升
+     - Lyndon B. Johnson's decision to **escalate** the Vietnam war.
+455. concur
+     - vi. 同意；一致；互助
+     - In each case Janis found that the people who made the decision exhibited a strong desire to **concur** in the group decision.
+456. survey
+     - n. 调查；测量；审视；纵览vt. 调查；勘测；俯瞰
+     - The groups he analyzed did not **survey** the range of choices but focused on a few.
+457. dispute
+     - vt. 辩论；怀疑；阻止；抗拒n. 辩论；争吵
+     - The few psycologists and teachers who **disputed** it were classified as unprogressive.
+458. struggle 
+     - vi. 奋斗，努力；挣扎vt. 使劲移动；尽力使得n. 努力，奋斗；竞争
+     - Yet now it is being recognized that the **struggle** to acquire basic reading, writing , adn arithmetic skills is much more traumatic at age eighteen than at age eight.
