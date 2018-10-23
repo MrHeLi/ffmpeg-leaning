@@ -1623,3 +1623,29 @@
 458. struggle 
      - vi. 奋斗，努力；挣扎vt. 使劲移动；尽力使得n. 努力，奋斗；竞争
      - Yet now it is being recognized that the **struggle** to acquire basic reading, writing , adn arithmetic skills is much more traumatic at age eighteen than at age eight.
+
+# day 45: Avoiding mindless conformity
+
+459. prey
+     - vi. 捕食；掠夺；折磨n. 捕食；牺牲者；被捕食的动物
+     - It protects us from other people's foolishness, but it leaves us **prey** to our own.
+460. ridicule
+     - vt. 嘲笑；嘲弄；愚弄n. 嘲笑；笑柄；愚弄
+     - They even look for opportunities to **ridicule** other people.
+461. taunt
+     - n. 嘲弄；讥讽vt. 奚落；逗弄adj. 很高的
+     - If a classmate is overweight they will **taunt** the person about it
+462. derive
+     - vt. 源于；得自；获得vi. 起源
+463. indulge
+     - vt. 满足；纵容；使高兴；使沉迷于…vi. 沉溺；满足；放任
+     - Bert knows this behavior is wrong and he **derives** no pleasure for it, but he goes along with it and even **indulges** in it for time to time so as not to appear weak to his friends.
+464. pace
+     - n. 一步；步速；步伐；速度vi. 踱步；缓慢而行
+     - Knowing she would at the very least be ostracized if she did not conform to their work **pace**, she decided to do so.
+465. Amount to
+     - 相当于，总计为
+     - Some lawyers believe such evidence **amounts to** testifying against onself and is therefore unconsititutional.
+466. pronography
+     - n. 色情文学；色情描写
+     - Many men view **pornography** as a harmless sexual stimulant.
