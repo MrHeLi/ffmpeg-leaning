@@ -1649,3 +1649,17 @@
 466. pronography
      - n. 色情文学；色情描写
      - Many men view **pornography** as a harmless sexual stimulant.
+
+# day46: Chapter nine:: Face-saving
+
+467. affirmative
+     - adj. 肯定的；积极的n. 肯定语；赞成的一方
+468. resort
+     - n. 凭借，手段；度假胜地；常去之地vi. 求助，诉诸；常去；采取某手段或方法
+469. maneuver
+     - n. [军] 机动；演习；策略；调遣vi. [军] 机动；演习；调遣；用计谋
+     - Unfortunately, those natural and healthy desires often prompt us to **resort** to face-saving **maneuvers**.
+470. Preserve
+     - vt. 保存；保护；维持；腌；禁猎n. 保护区；禁猎地；加工成的食品；（某人或群体的）专门活动
+     - Face-saving is attempting to **preserve** our self-image or the image we project to others when some unpleasant reality threatens it.
+471. Most people are quick to accept praise but slow to accept blame.
