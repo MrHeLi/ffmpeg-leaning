@@ -1678,11 +1678,28 @@
 # Causes and effects of face-saving
 
 475. plausible
+
      - adj. 貌似可信的，花言巧语的；貌似真实的，貌似有理的
+
 476. inferiority
+
      - n. 自卑；下属；次等；下部
      - One **plausible** theory is that to some extent everyone suffers from feelings of **inferiority**.
+
 477. indispose
+
      - vt. 使不适当；使厌恶；使不舒服
      - Face-saving leaves us indisposed to inquiry.
-478. 
+
+478. marijuana
+
+     - n. 大麻；大麻毒品
+
+479. provoke
+
+     - vt. 驱使；激怒；煽动；惹起
+     - I was discussing a **thought-provoking** (发人深省的)article on **marijuana** with a college instructor friend.
+
+480. exaggerate
+
+     - vt. 使扩大；使增大vi. 夸大；夸张
