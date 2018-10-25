@@ -1663,3 +1663,26 @@
      - vt. 保存；保护；维持；腌；禁猎n. 保护区；禁猎地；加工成的食品；（某人或群体的）专门活动
      - Face-saving is attempting to **preserve** our self-image or the image we project to others when some unpleasant reality threatens it.
 471. Most people are quick to accept praise but slow to accept blame.
+
+# day47: Face-saving situation
+
+472. denounce
+     - vt. 谴责；告发；公然抨击；通告废除
+     - Those who see themselves as sensitive to others and completely free of prejudice may **denounce** anyone who points, however, innocently and constructively, to evidence that suggests otherwise.
+473. blurt
+     - vt. 未加思索地冲口说出；突然说出
+474. leisure
+     - n. 闲暇；空闲；安逸	adj. 空闲的；有闲的；业余的
+     - One day during an argument, his son **blurts** out that for years Sam has been more concerned withh his business and his own **leisure** pursuits than with his children.
+
+# Causes and effects of face-saving
+
+475. plausible
+     - adj. 貌似可信的，花言巧语的；貌似真实的，貌似有理的
+476. inferiority
+     - n. 自卑；下属；次等；下部
+     - One **plausible** theory is that to some extent everyone suffers from feelings of **inferiority**.
+477. indispose
+     - vt. 使不适当；使厌恶；使不舒服
+     - Face-saving leaves us indisposed to inquiry.
+478. 
