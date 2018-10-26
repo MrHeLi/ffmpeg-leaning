@@ -1678,28 +1678,55 @@
 # Causes and effects of face-saving
 
 475. plausible
-
      - adj. 貌似可信的，花言巧语的；貌似真实的，貌似有理的
-
 476. inferiority
-
      - n. 自卑；下属；次等；下部
      - One **plausible** theory is that to some extent everyone suffers from feelings of **inferiority**.
-
 477. indispose
-
      - vt. 使不适当；使厌恶；使不舒服
      - Face-saving leaves us indisposed to inquiry.
-
 478. marijuana
-
      - n. 大麻；大麻毒品
-
 479. provoke
-
      - vt. 驱使；激怒；煽动；惹起
      - I was discussing a **thought-provoking** (发人深省的)article on **marijuana** with a college instructor friend.
-
 480. exaggerate
-
      - vt. 使扩大；使增大vi. 夸大；夸张
+
+# day48
+
+481. riddle
+     - vt. 解谜；给...出谜；充满于n. 谜语；粗筛；谜一般的人、东西、事情等
+     - This student's written analysis said, in effect, that the "pro" preffessor's argument had no weaknesses at all and that the "anti" professor's was **riddled** with weaknesses.
+482. tape
+     - n. 胶带；磁带；带子；卷尺vt. 录音；用带子捆扎；用胶布把…封住
+     - Even after the class listened to a **tape** of the debate that demonstrated that this student had heard wrong in several important instances.
+483. encounter
+     - vt. 遭遇，邂逅；遇到n. 遭遇，偶然碰见
+     - While reading a book that discussed effective teaching, she **encountered** a chapter that examined a particular classroom practice.
+484. recount
+     - vt. 叙述；重新计算n. 重算
+     - She recounted to me later.
+485. tempt
+     - vt. 诱惑；引起；冒…的风险；使感兴趣
+     - Surely the **temptation** not to do so must have been powerful.
+
+# Controlling face-saving tendencies
+
+486. substitute
+     - n. 代用品；代替者vt. 代替
+     - By prompting us to misinterpret our perceptions and **substitute** wishful thinking for reality, it leads us to rationalize.
+
+487. Rationalizing is the very opposite of reasoning. whereas resoning works from evidence to conclusion, rationalizing works from conclusion to evidence.
+488. undermine
+     - vt. 破坏，渐渐破坏；挖掘地基
+     - Thus face-saving undermines the very process by which we think critically.
+489. nevertheless
+     - adv. 然而，不过；虽然如此
+     - **Nevertheless**, we can learn to control it and thereby greatly reduce its effect on our critical thinking.
+490. persuade
+     - vt. 说服，劝说；使某人相信；劝某人做（不做）某事adj. 空闲的，有闲的
+     - To control your face-saving tendency, begin by admitting that you have it. In addition, **persuade** yourself that there is no shame in having it because it is a natural tendency.
+491. anticipate
+     - vt. 预期，期望；占先，抢先；提前使用
+     - Try to **anticipate** occasions of face-saving.
