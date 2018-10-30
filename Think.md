@@ -1730,3 +1730,101 @@
 491. anticipate
      - vt. 预期，期望；占先，抢先；提前使用
      - Try to **anticipate** occasions of face-saving.
+
+# day49 Applications
+
+492. sophomore
+
+     - n. 大学二年级生；（美）有二年经验的人	adj. 二年级的；二年级学生的
+
+493. Irritable
+
+     - adj. 过敏的；急躁的；易怒的
+     - While she is home for spring vacation, she is very **irritable** with her parents.
+
+494. seize
+
+     - vt. 抓住；夺取；理解；逮捕vi. 抓住；利用；（机器）卡住
+     - She **seizes** every opportunity to criticize them and their values and manages to take offense at their every comment to her.
+
+495. row
+
+     - Vt. **争吵** n. 行，排；划船；街道；**吵闹**
+
+     - she causes a **row** in which she accuses them of never having given her enough attention and love.
+
+496. infant
+
+     - n. 婴儿；幼儿；未成年人adj. 婴儿的；幼稚的；初期的；未成年的
+
+497. traumatic
+
+     - adj. （心理）创伤的adj. （生理）外伤的
+
+498. tragic
+
+     - adj. 悲剧的；悲痛的，不幸的
+     - The experience of  delivery would have been so **traumatic** and the consequences so **tragic**, in the doctor's view, that obortion was the only resonable course of action.
+
+499. enact
+
+     - vt. 颁布；制定法律；扮演；发生
+
+500. legislation
+
+     - n. 立法；法律
+     - A number of communities around the nation have **enacted** **legislation** banning the sale or possession of handguns.
+
+501. hail
+
+     - n. 冰雹；致敬；招呼；一阵int. 万岁；欢迎vt. 致敬；招呼；向...欢呼；猛发；
+     - Many people **hail** such legislation as an important step toward public safety and the prevention of crime.
+
+
+# Day 50
+
+502. merit
+
+     - n. 优点，价值；功绩；功过vt. 值得
+
+     - Decides the **merits** of Quentin’s view.
+
+503. Encyclopedia
+
+     - n. 百科全书（亦是encyclopaedia）
+
+     - Wikipedia the free encyclopedia.
+
+504. objective
+
+     - adj. 客观的；目标的；宾格的n. 目的；目标；[光] 物镜；宾格
+     - If the parents are capable of **objective** explanation, explain to them the various views that are possible and encourage them to choose their own.
+
+# Chapter Ten :: Stereotyping
+
+505. stereotype
+     - vt. 使用铅版；套用老套，使一成不变n. 陈腔滥调，老套；铅版
+     - **Stereotypes** are a form of generalization.
+506. trait
+     - n. 特性，特点；品质；少许
+     - When we generalize, we group or classify people, places, or things according to the **traits** they have in common.
+507. distort
+     - vt. 扭曲；使失真；曲解vi. 扭曲；变形
+     - When a stereotype is challenged, the person who holds it is unlikely to modify or discard it, because it is based on a **distortion** of perception.
+508. ethnic
+     - adj. 种族的；人种的
+     - The most common kinds of stereotypeing are **ehnic** and religious.
+509. Jew
+     - n. 犹太人；犹太教徒；守财奴vt. 杀价；欺骗
+510. shrewd
+     - adj. 精明的；狡猾的；机灵的n. 精明（的人）；机灵（的人）
+511. cunning
+     - adj. 狡猾的；巧妙的；可爱的n. 狡猾
+512. clannish
+     - adj. 氏族的；党派的；排他的
+513. greed
+     - n. 贪婪，贪心
+     - **Jews** are **shrewd** and **cunning**, **clannish**, have a financial genius matched only by their **greed**.
+514. coarse
+     - adj. 粗糙的；粗俗的；下等的
+     - Italians are hot-tempered, coarse, and sensual.
