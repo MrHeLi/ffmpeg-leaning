@@ -1828,3 +1828,84 @@
 514. coarse
      - adj. 粗糙的；粗俗的；下等的
      - Italians are hot-tempered, coarse, and sensual.
+
+# day 51: Facts don't matter
+
+515. defiance
+     - n. 蔑视；挑战；反抗
+     - It is possible for a stereotype to grow in **defiance** of all evidence.
+516. vicious
+     - adj. 恶毒的；恶意的；堕落的；有错误的；品性不端的；剧烈的
+517. leopard
+     - n. 豹；美洲豹
+
+# Contradictory stereotypes
+
+518. ethnocentric
+     - adj. 种族优越感的；民族中心主义的
+     - Amone the most significant causes of stereotyping is "mine is better" thinking, especially in its extreme form, **ethnocentrism**.
+519. Assimilate
+     - vt. 吸收；使同化；把…比作；使相似vi. 吸收；同化
+     - Later when they became **assimilated** into the general culture, they retained many of their fixed views of outsiders.
+520. linger
+     - vi. 徘徊；苟延残喘；磨蹭
+     - Traces of ethnocentrism can **linger** for generations and resurface in movements of ethnic pride.
+521. obligate
+     - vt. 使负义务；强使，强迫；对…施以恩惠adj. 有责任的，有义务的；必需的
+     - We are almost constantly **obligated** to choose sides in human relations.
+522. vulnerable
+     - adj. 易受攻击的，易受…的攻击；易受伤害的；有弱点的
+     - We remain **vulnerable** to steroetyped thinking in others.
+
+# day52: Effects of stereotyping
+
+523. dignity
+
+     - n. 尊严；高贵
+     - It denies them their **dignity** and individuality
+
+524. trigger
+
+     - vt. 引发，引起；触发n. 扳机；[电子] 触发器；制滑机
+
+525. anxiety
+
+     - n. 焦虑；渴望；挂念；令人焦虑的事
+
+526. scapegoat
+
+     - n. 替罪羊，替人顶罪者；替身vt. 使成为…的替罪羊
+
+527. feed
+
+     - vt. 喂养；供给；放牧；抚养（家庭等）；靠…为生n. 饲料；饲养；（动物或婴儿的）一餐
+     - It **triggers** their frustrations and **anxieties**, feeds their fears of conspiracies, and creates a network of suspicion and **scapegoating**.
+
+528. plague
+
+     - n. 瘟疫；灾祸；麻烦；讨厌的人vt. 折磨；使苦恼；使得灾祸
+
+     - Stereotypes proved a ready supply of simplistic answers to what ever questions happen to be plaguing us at the moment.
+
+# day 53
+
+529. pathetic
+     - adj. 可怜的，悲哀的；感伤的；乏味的
+     - Indeed, they are often its most **pathetic** victims.
+530. leer
+     - n. 媚眼，秋波；恶意的瞥视vi. 抛媚眼，送秋波；斜睨
+531. pervert
+     - vt. 使堕落；滥用；使反常n. 堕落者；行为反常者；性欲反常者；变态
+     - A good many people see all all sex education teachers as **leering perverts.**
+532. welfare
+     - n. 福利；幸福；福利事业；安宁adj. 福利的；接受社会救济的
+     - How can the people be reasonable about the issue of welfare when they see the poor as scheming.
+
+# Avoiding stereotyping
+
+533. institution
+     - n. 制度；建立；（社会或宗教等）公共机构；习俗
+534. traumatic
+     - adj. （心理）创伤的 adj. （生理）外伤的
+     - It may have been something you were taught as a child or some **traumatic** experirence you had.
+
