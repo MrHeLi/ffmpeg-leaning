@@ -1909,3 +1909,50 @@
      - adj. （心理）创伤的 adj. （生理）外伤的
      - It may have been something you were taught as a child or some **traumatic** experirence you had.
 
+# day 54: Chapter eleven:: Oversimplification
+
+535. Supervise
+     - vt. 监督，管理；指导vi. 监督，管理；指导
+     - In industry, **supervisors** must train new workers.
+536. procedure
+     - n. 程序，手续；步骤
+537. novie
+     - n. 初学者，新手
+     - In government experienced employees must explain **procedures** to **novices**.
+
+# Oversimplification distorts
+
+538. Impede
+     - vt. 阻碍；妨碍；阻止
+     - Do such teachers confuse students and **impede** learning?
+539. account
+     - n. 账户；**解释**；账目，账单；理由；描述vi. 解释；导致；报账
+     - Only a careful **accounting** of all relevant details will be satisfactory.
+540. therapist
+     - n. 临床医学家；治疗学家
+     - In other words, for a time, however brief, the **therapist** has had an insight into the patients that the patients themselves did not have.
+541. handout
+     - n. 散发材料（免费发给的新闻通报）；上课老师发的印刷品；文字资料 （会议上分发的）；施舍物
+542. bum
+     - n. 流浪汉；屁股；狂欢作乐；能力差的人vi. 流浪；靠乞讨过活；发嗡嗡声adj. 无价值的；劣质的；很不愉快的
+     - Give people a welfare **handout** and you make **bums** of them.
+
+# day 55: Cause of oversimplification
+
+543. bias
+     - n. 偏见；偏爱；斜纹；乖离率vt. 使存偏见
+     - One is "mine is better" thinking, which can lead us to see issues in a **biased** way and thus ignore facts that don't support our view.
+544. superficial
+     - adj. 表面的；肤浅的 ；表面文章的；外表的；（人）浅薄的
+545. intimidate
+     - vt. 恐吓，威胁；胁迫
+     - If we are intimidated by complexity we may prefer superficial answers to questions because they make us feel comfortable.
+
+# Avoiding oversimplification
+
+546. revise
+     - vt. 修正；复习；校订vi. 修订；校订；复习功课
+     - Here is how you might **revise** the oversimplifications discussed in the chapter.
+547. alien
+     - adj. 外国的；相异的，性质不同的；不相容的n. 外国人，外侨；外星人
+     - States must provide free public education not only to all children of citizens and aliens legally residing in this country but to the children of illegal aliens as well.
