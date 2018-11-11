@@ -1952,7 +1952,54 @@
 
 546. revise
      - vt. 修正；复习；校订vi. 修订；校订；复习功课
-     - Here is how you might **revise** the oversimplifications discussed in the chapter.
+     - Here is how you might **revise** the oversimplifications discussed in the chap ter.
 547. alien
      - adj. 外国的；相异的，性质不同的；不相容的n. 外国人，外侨；外星人
      - States must provide free public education not only to all children of citizens and aliens legally residing in this country but to the children of illegal aliens as well.
+
+# day 56: Chapter twelve:: Hasty conclusions.
+
+548. hasty
+     - adj. 轻率的；匆忙的；草率的；懈怠的
+     - A **hasty** conclusion is a premature judgment. 
+549. Arduous
+     - adj. 努力的；费力的；险峻的
+     - The neighbor may have been **enrolled** in programs beyond his capacity and failed despite arduous effort.
+
+# Weighing both sides
+
+550. lament
+     - n. 挽歌；恸哭；悲痛之情vi. 哀悼；悲叹；悔恨
+     - Many arrive at this conclusion after reading an article or two **lamenting** the decline of craftsmanship or the rising rate of crime in cities.
+
+# Causes of hasty conclusions
+
+551. Leap
+
+     - vi. 跳，跳跃vt. 跳跃，跳过；使跃过
+     - as a result they will leap at the first conclusion that occurs to them.
+
+
+# day 57
+
+552. Compound
+     - n. [化学] 化合物；混合物；复合词adj. 复合的；混合的v. 合成；混合；恶化，**加重**；和解，妥协
+     - **Compounding** this tendency is the desire to sound authoritative.
+553. compensate
+     - vi. 补偿，赔偿；抵消
+     - You must **compensate** me for this loss.
+554. farfetched 
+     - adj. 牵强的；乱七八糟的；靠不住的
+     - They stanto embrace any report however **farfetched**, of scandalous behavior among celebrities.
+555. acquaintance
+     - n. 熟人；相识；了解；知道
+     - Across the room they notice an **acquaintance** dining with a women.
+556. illicit
+     - adj. 违法的；不正当的
+     - The first businessman has had seversal **illicit** affairs himself and assums other people behave similarity.
+557. erotic
+     - adj. 色情的；性爱的；性欲的
+     - He is also **erotically** stimulated by the idea that the couple are cheating on their mates.
+558. innocent
+     - adj. 无辜的；无罪的；无知的n. 天真的人；笨蛋
+     - He concludes the couple are **innocent** of any wrongdoing.µµ
