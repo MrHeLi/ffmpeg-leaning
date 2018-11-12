@@ -2002,4 +2002,41 @@
      - He is also **erotically** stimulated by the idea that the couple are cheating on their mates.
 558. innocent
      - adj. 无辜的；无罪的；无知的n. 天真的人；笨蛋
-     - He concludes the couple are **innocent** of any wrongdoing.µµ
+     - He concludes the couple are **innocent** of any wrongdoing.
+
+# day 58
+
+559. trap
+     - vt. 诱捕；使…受限制；使…陷入困境；吸收；使…上当n. 陷阱；圈套；困境；[建] 存水湾
+     - Therefore, it can **trap** even the most careful thinker.
+560. Anesthetic
+     - adj. 麻醉的；感觉缺失的n. 麻醉剂，麻药
+561. innovate
+     - vi. 创新；改革；革新vt. 改变；创立；创始；引人
+     - The "safe" drug **innovative** began to be used as an **anesthetic**.
+562. paralysis
+     - n. 麻痹；无力；停顿
+     - A number of people now appear to have suffered extensive **paralysis** and brain damage from it.
+563. asthma
+     - n. [内科][中医] 哮喘，气喘
+564. bronchial 
+     - adj. 支气管的
+565. spray
+     - n. 喷雾，喷雾剂；喷雾器；水沫vt. 喷射
+     - A powder, it is **sprayed** into the **bronchial** passages.
+566. inhale
+     - vt. 吸入；猛吃猛喝
+567. Allergen
+     - n. [医] 过敏原
+     - It desensitizes these passages so that they no longer constrict when **allergens** are **inhaled**.
+568. kidney
+     - n. [解剖] 肾脏；腰子；个性
+569. lesion
+     - n. 损害；身体上的伤害；机能障碍
+     - During the early testing of this drug, one group of monkeys developed **kidney** **lesions** after being administered the drug.
+570. Coincidental
+     - adj. 巧合的；符合的；暗合的；一致的
+     - Was the reaction **coincidental** to the use of the drug?
+571. pertain
+     - vi. 属于；关于；适合
+     - Before you draw any conclusion, be sure you have identified an answered all important questions pertaining to the issue.
