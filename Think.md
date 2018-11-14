@@ -2040,3 +2040,53 @@
 571. pertain
      - vi. 属于；关于；适合
      - Before you draw any conclusion, be sure you have identified an answered all important questions pertaining to the issue.
+
+# day 59 :: Applications
+
+572. determine
+     - v. （使）下决心，（使）做出决定vi. 确定；决定；判决，终止；[主用于法律]了结，终止，结束
+     - **Determine** whether another possible conclusion might be more supportable than this one.
+573. prudishness
+     - adj. 装正经的；过分规矩的
+574. premarital
+     - adj. 婚前的
+     - Have you ever wondered why European and American cultures have been so opposed to **premarital** sex? The answer is simple: **prudishness**.
+575. vow
+     - n. 发誓；誓言；许愿vt. 发誓；郑重宣告
+     - I **vowed** a long time ago that I would never burden my son with duties and responsibilities.
+576. decent
+     - adj. 正派的；得体的；相当好的
+577. sentence
+     - n. [语][计] 句子，命题；宣判，判决vt. 判决，宣判
+     - A man was sentenced to ninety-nine years in prison for **indecent** exposure.
+578. Burglar
+     - n. 夜贼，窃贼
+579. Prosecutor
+     - n. 检察官；公诉人；[法] 起诉人；实行者
+     - The **prosecutor** was able to ask for and get such a long sentence because the man had eleven prior convictions for **burglary**.
+580. attorney
+     - n. 律师；代理人；检察官
+581. abolish
+     - vt. 废除，废止；取消，革除
+     - Some people believe the college degree should be **abolished** as a job requirement.
+
+# day 60 Chapter Thirteen:: Unwarranted assumptions
+
+582. Warrant
+     - n. 根据；证明；正当理由；委任状vt. 保证；担保；批准；辩解
+583. take for granted
+     - 认为…理所当然
+     - An assumption is not arrived at by reasoning but merely **taken for granted.**
+584. utter
+     - vt. 发出，表达；发射adj. 完全的；彻底的；无条件的
+     - Which assumptions we would have to ponder every word we **utter**.
+585. fatigue
+     - n. 疲劳，疲乏；杂役vt. 使疲劳；使心智衰弱adj. 疲劳的
+     - The net effect would by to increase our **fatigue** to an intolerable level and to hinder progress.
+586. accredit
+     - vt. 授权；信任；委派；归因于
+587. Custodian
+     - n. 管理人；监护人；保管人
+588. neglect
+     - vt. 疏忽，忽视；忽略n. 疏忽，忽视；怠慢
+     - If the class were at 8:00 A.M., the **custodian** may have **neglected** to open the door to the building.
