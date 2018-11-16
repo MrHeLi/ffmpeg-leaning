@@ -2090,3 +2090,29 @@
 588. neglect
      - vt. 疏忽，忽视；忽略n. 疏忽，忽视；怠慢
      - If the class were at 8:00 A.M., the **custodian** may have **neglected** to open the door to the building.
+
+# day61 Assumptions reflect outlook
+
+589. intimate
+
+     - adj. 亲密的；私人的；精通的；有性关系的n. 知己；至交vt. 暗示；通知；宣布
+
+590. Bound up
+
+     - 紧紧束缚在 ... 里. 埋头于
+     - It is **intimately bound up** with their outlook on a large and diverse number of subjects.
+
+591. endeavour
+
+     - n. 尽力，竭力vt. 竭力做到，试图或力图（做某事）vi. 竭力；企图
+     - Most people hold similar assumptions about other areas of **endeavour**.
+
+592. quack
+
+     - n. 庸医；鸭叫声adj. 骗人的；冒牌医生的vi. （鸭子）嘎嘎叫；吹嘘；大声闲聊
+     - The person who assumes that all doctors are quacks will be inclined to assume that the particular doctors she visits is also a **quack**.
+
+593. sweeping
+
+     - n. 扫除；垃圾adj. 彻底的；广泛的；扫荡的v. 打扫；扫除（sweep的现在分词形式）
+     - The more general and **sweeping** the assumption, the more experience would be needed.
