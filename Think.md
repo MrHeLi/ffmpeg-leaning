@@ -2116,3 +2116,60 @@
 
      - n. 扫除；垃圾adj. 彻底的；广泛的；扫荡的v. 打扫；扫除（sweep的现在分词形式）
      - The more general and **sweeping** the assumption, the more experience would be needed.
+
+# day 62 Popular unwarranted assumptions
+
+594. dracula
+     - n. 吸血鬼，又叫惊情四百年（电影名）；德拉库拉（人名）
+     - May viewers of the **Dracula** movies assume the main character was purely a fiction.
+595. villian
+     - n. 坏人，恶棍；戏剧、小说中的反派角色；顽童；罪犯
+596. nolbleman
+     - adj. 高尚的；贵族的；惰性的；宏伟的n. 贵族
+
+597. peasant
+     - n. 农民；乡下人
+598. vampire
+     - n. 吸血鬼；[脊椎] 吸血蝙蝠
+     - Teps ws a fifteenth-century Rumanian **nobleman** who ruled so cruelly that ***peasants*** of the time regarded him as a human **vampire**.
+599. feast
+     - vt. 享受；款待，宴请n. 筵席，宴会；节日vi. 享受；参加宴会
+
+600. banquet
+     - n. 宴会，盛宴；宴请，款待
+     - He once invited the poor and sick people of his domain to a large **feast** and then set fire to the **banquet** hall.
+601. ambassador
+     - n. 大使；代表；使节
+602. turkish
+     - adj. 土耳其的；土耳其人的，土耳其语的；突厥诸语言的n. 土耳其
+     - Another time a **Turkish ambassador** and his party **nailed** to their heads.
+603. crutch
+     - n. 拐杖；支柱；依靠；胯部vt. 用拐杖支撑；支持
+     - In other words, htat the former do not need the **crutch** of traditional morality but can choose their behavior freely and independently.
+604. bare
+     - adj. 空的；赤裸的，无遮蔽的vt. 露出，使赤裸
+605. Ample
+     - adj. 丰富的；足够的；宽敞的
+     - Indeed , the **barest** contact with history give **ample** suggestions that concepts and values change.
+
+# 63 Recongnizing unwarranted assumptios
+
+606. fuss
+     - vi. 小题大作；忙乱；焦燥；焦急；无事自扰n. 大惊小怪，大惊小怪的人；小题大作；忙乱
+     - I really don't understand why people make such a **fuss** about violence in films.
+607. silly
+     - adj. 愚蠢的；不明事理的；没头脑的
+608. complacent
+     - adj. 自满的；得意的；满足的
+     - By making people insensitive to other's pain and **complacent** about violence in real life.
+
+# Applications
+
+609. theater
+     - n. 电影院，戏院，剧场；戏剧；手术室
+     - What movie is on at the **theater** tonight.
+610. lesbian
+     - adj. [心理] 女同性恋的n. 女同性恋者
+611. dean
+     - n. 院长；系主任；教务长；主持牧师
+     - I may just make an appointment to see the **dean** about him.
