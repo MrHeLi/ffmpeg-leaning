@@ -1,4 +1,5 @@
-# day 01
+## wishy-washyday 01
+
 1. sentiment
     *  情绪、观点   public sentiment   公众情绪、公众观点
     *  you'd also have to include all your sentiments and preferences.
@@ -2173,3 +2174,33 @@
 611. dean
      - n. 院长；系主任；教务长；主持牧师
      - I may just make an appointment to see the **dean** about him.
+
+# day 64:Chapter fourteen:: Unwarranted assumptions
+
+612. fallacy
+     - n. 谬论，谬误
+     - Logical fallacies are errors in reasoning.
+613. premise
+     - vt. 引出，预先提出；作为…的前提n. 前提；上述各项；房屋连地基
+     - For an argument to be valid, the conclusion must follow logically from the **premises**.
+614. get even with \ get back on \ get back at
+     -  复仇、报复
+     -  I've got to **get even with** Mary because she offended me without cause.
+
+# Either-Or thinking
+
+615. Wishy-washy
+     - adj. 空泛的；缺乏特点或决心的；淡而无味的；缺乏力量的
+     - This does not mean that we should be **wishy-washy** or compromise matters of principle.
+
+# Attacking the person
+
+616. allege
+     - vt. 宣称，断言；提出…作为理由
+617. ethical
+     - adj. 伦理的；道德的；凭处方出售的
+618. congress
+     - n. 国会；代表大会；会议；社交
+     - A member of **Congress** is being investigated for **alleged** lawbreaking or **ethical** violations.
+619. Presumable
+     - adj. 可能有的；可推测的
