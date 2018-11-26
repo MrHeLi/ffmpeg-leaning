@@ -2268,5 +2268,16 @@
 633. Exempt
      - vt. 免除；豁免adj. 被免除的；被豁免的n. 免税者；被免除义务者
      - Women should also not be **exempted** from frontline duty.
-634. 
+1. bog
+   - n. 沼泽；泥塘 vt. 使陷于泥沼；使动弹不得 
+2. alleviate
+   - vt. 减轻，缓和 
+   - Every knowledgeable person agrees that the nation's court system is seriously bogged down with cases and that something must be done to alleviate that condition.
+3. dispense
+   - vt. 分配，分发；免除；执行 vi. 免除，豁免 
+   - The best way to do so, I convinced, is to dispense with the outdated concept of "innocent until proven guilty" and make all those charged with a crime prove their innocent.
+4. ironic
+   - adj. 讽刺的；反话的 
+   - It's ironic that ...
+
 
