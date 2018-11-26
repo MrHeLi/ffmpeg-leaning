@@ -2204,3 +2204,69 @@
      - A member of **Congress** is being investigated for **alleged** lawbreaking or **ethical** violations.
 619. Presumable
      - adj. 可能有的；可推测的
+
+# day 65: Shifting the burden for proof
+
+620. Refute
+     - vt. 反驳，驳斥；驳倒
+     - Whenever we make an assertion, it is our responsibility to support it, not other people's to **refute** it.
+621. Superstition
+     - n. 迷信
+     - "If B occurred after A, A must have caused B.", this error is undoubtedly the basis of most **superstitions**.
+622. Ladder
+     - n. 阶梯；途径；梯状物
+
+620. befall
+     - vi. 降临vt. 降临；发生
+     - Misfortune **befalls** someone shortly after he walks under a **ladder**.
+621. Straw
+     - n. 稻草；吸管；一文不值的东西adj. 稻草的；无价值的
+     - Straw man
+
+# day 66: Straw man
+
+622. adversary
+     - n. 对手；敌手
+     - This fallacy consists of pretending one's **adversary** has said something false and then proceeding to demonstrate that it is false.
+623. arrogance
+     - n. 自大；傲慢态度
+     - It's exactly this kind of **arrogance** by self-appointed social reformers that everyone who lives the constitutions should fear.
+624. discrimination
+     - n. 歧视；区别，辨别；识别力
+
+# Irrational appeals
+
+625. Irrational
+
+     - adj. 不合理的；无理性的；荒谬的n. [数] 无理数
+     - **Irrational ** appeals urge us to accept ideas at face value or on some other basis than reasonableness.
+
+626. resent
+
+     - vt. 怨恨；愤恨；厌恶
+
+627. guilt
+
+     - n. 犯罪，过失；内疚
+     - Appeal to emotion: this appeal urges the uncritical acceptance of strong feelings; for example, love of family or contry, fear, **resentment**, **guilt**.
+
+# day 67: Indentifing logical fallacies
+
+628. Disprove
+     - vt. 反驳，证明…是虚假的
+629. tempt
+     - vt. 诱惑；引起；冒…的风险；使感兴趣
+     - It's **tempting** to think that if we find errors, we automatically **disprove** the conclusion.
+630. rob
+     - vt. 抢劫；使…丧失；非法剥夺vi. 抢劫；掠夺
+     - All politicians are going to **rob** the public so it doesn't matter who gets elected.
+631. patriotism
+     - n. 爱国主义；爱国心，爱国精神
+632. absurd
+     - adj. 荒谬的；可笑的n. 荒诞；荒诞作品
+     - It's **absurd** to  believe in life after death because no one has ever returned from the grave.
+633. Exempt
+     - vt. 免除；豁免adj. 被免除的；被豁免的n. 免税者；被免除义务者
+     - Women should also not be **exempted** from frontline duty.
+634. 
+
