@@ -2268,16 +2268,46 @@
 633. Exempt
      - vt. 免除；豁免adj. 被免除的；被豁免的n. 免税者；被免除义务者
      - Women should also not be **exempted** from frontline duty.
-1. bog
-   - n. 沼泽；泥塘 vt. 使陷于泥沼；使动弹不得 
-2. alleviate
-   - vt. 减轻，缓和 
-   - Every knowledgeable person agrees that the nation's court system is seriously bogged down with cases and that something must be done to alleviate that condition.
-3. dispense
-   - vt. 分配，分发；免除；执行 vi. 免除，豁免 
-   - The best way to do so, I convinced, is to dispense with the outdated concept of "innocent until proven guilty" and make all those charged with a crime prove their innocent.
-4. ironic
-   - adj. 讽刺的；反话的 
-   - It's ironic that ...
+634. bog
+     - n. 沼泽；泥塘 vt. 使陷于泥沼；使动弹不得 
+635. alleviate
+     - vt. 减轻，缓和 
+     - Every knowledgeable person agrees that the nation's court system is seriously bogged down with cases and that something must be done to alleviate that condition.
+636. dispense
+     - vt. 分配，分发；免除；执行 vi. 免除，豁免 
+     - The best way to do so, I convinced, is to dispense with the outdated concept of "innocent until proven guilty" and make all those charged with a crime prove their innocent.
+637. ironic
+     - adj. 讽刺的；反话的 
+     - It's ironic that ...
+
+# day 68 Chapter fifteen: The problems in combination
+
+638. cherish
+     - vt. 珍爱vt. 怀有（感情等）；抱有（希望等）
+     - For example, "mine is better" thinking may lead us to resist new ideas that challenge our **cherished** beliefs.
+639. obstruct
+     - vt. 妨碍；阻塞；遮断vi. 阻塞；设障碍
+640. singly
+     - adv. 逐一地；个别地；各自地；直截了当地
+641. cumulate
+     - vt. 累积；堆积adj. 累积的；堆积的vi. 累积
+     - **Cumulatively** they **obstruct** critical thinking more than any one of their component problems does **singly**.
+
+# Examing the problems in combination
+
+642. zealous
+     - adj. 热心的，热情的，积极的
+     - He is unusually **zealous** in his efforts.
+643. extravagance
+     - n. 奢侈，浪费；过度；放肆的言行
+     - She quietly presents facts that disprove many of Cloaude's ideas and points up the **extravagance** of Claude's assertions.
+644. relieve
+     - vt. 解除，减轻；使不单调乏味；换…的班；解围；使放心
+     - Claude was driven to **relieve** his embarrassment through face-saving devices.
+645. commitment
+     - n. 承诺，保证；委托；承担义务；献身
+646. reluctance
+     - n. [电磁] 磁阻；勉强；不情愿
+     - Because the stronger one's commitment, the greater one's reluctance to admit error.
 
 
