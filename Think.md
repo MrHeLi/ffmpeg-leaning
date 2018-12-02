@@ -1,4 +1,4 @@
-## wishy-washyday 01
+## day 01
 
 1. sentiment
     *  情绪、观点   public sentiment   公众情绪、公众观点
@@ -2309,5 +2309,99 @@
 646. reluctance
      - n. [电磁] 磁阻；勉强；不情愿
      - Because the stronger one's commitment, the greater one's reluctance to admit error.
+
+# day 69
+
+647. decay
+
+     - vi. 衰退，[核] 衰减；腐烂，腐朽vt. 使腐烂，使腐败；使衰退，使衰落
+     - Today's designers are nothing but perverts ntent on destroying the very idea of modesty and promoting moral **decay**.
+
+648. promiscuous
+
+     - adj. 混杂的；杂乱的adv. 偶然地；胡乱地
+     - Ten years ago, Sam fell in with a group of sexually **promiscuous** people.
+
+649. glorify
+
+     - t. 赞美；美化；崇拜（神）；使更壮丽
+
+650. Monogamous
+
+     - adj. 一夫一妻的；[动] 单配的
+
+651. Puritanical
+
+     - adj. 清教徒的；极端拘谨的
+
+     - he believes that warnings about AIDS are based on a **puritanical** aversion to sexual expression.
+
+# Avoiding the problems in combination
+
+652. Appal
+     - vi. 减弱；变得苍白；令人发腻
+     - Sb be appalled.
+653. willful
+     - adj. 有意的；任性的；故意的
+654. degeneracy
+     - n. 退化；[物] 简并；堕落；退步
+     - They were raised to believe that lesbianism is **willful** moral **degerneracy**.
+
+# day 70
+
+655. cope
+     - vi. 处理；对付；竞争
+     - Struggleing to **cope** with their new awareness, each begins to blame the other.
+656. aloof
+     - adj. 冷淡的；远离的；冷漠的adv. 远离；避开地
+     - Ann suggests Dan has always been cold and **aloof** with the girl.
+657. smother
+     - vt. 使窒息；抑制；（用灰等）闷熄；忍住vi. 窒息；被抑制；闷死n. 窒息状态；令人窒息的浓烟
+     - Dan is sure Ann has **smothered** her affection.
+658. deviance
+     - n. 异常；异常行为
+     - They decide that there is more direct cause of her **deviance**.
+659. Enroll
+     - vt. 登记；使加入；把...记入名册；使入伍vi. 参加；登记；注册；记入名册
+     - Stephen **enrolls** as a freshman at progeress Technical College.
+660. riser
+     - n. 起床者；起义者；竖板；叛徒
+     - He's a late **riser**, this disturbs him.
+661. Jewish
+     - adj. 犹太人的；犹太族的
+662. ply
+     - vt. 使用，不住地使用；折，弯；从事vi. 辛勤工作；定期地来往（船、车等）
+     - Stephen **plies** him with **pathetic** tales of misfortune.
+
+663. phony
+     - adj. 假的，欺骗的n. 假冒者；赝品
+     - He loudly denounces Mr.Stein as a **phony**.
+
+# day 71
+
+664. devise
+     - vt. 设计；想出；发明；图谋；遗赠给n. 遗赠
+665. hoax
+     - vt. 愚弄；欺骗n. 骗局；恶作剧
+     - Three professor **devised** a **hoax** as an experiment.
+666. Charitable
+     - adj. 慈善事业的；慷慨的，仁慈的；宽恕的
+667. refrain
+     - vi. 节制，克制；避免；制止n. 叠句，副歌；重复
+     - U.S. law has accorded most **charitable** and educational groups tax-exempt status as long as they **refrain** from lobbying activities.
+668. legion
+     - n. （古罗马）军团；众多；军队adj. 众多的；大量的
+669. veteran
+     - n. 老兵；老手；富有经验的人；老运动员adj. 经验丰富的；老兵的
+     - However, **veterans** groups like the American **Legion** and the Veterans groups like the traditionally regarded as exceptions.
+670. distribute
+     - vt. 分配；散布；分开；把…分类
+     - The profits criminals receive in this manner should be placed in a fund to be **distributed** among the victims of their crimes.
+671. Testament
+     - n. [法] 遗嘱；圣约；确实的证明
+     - The New **Testament** contains these words from St. Paul:...
+672. dormitory
+     - n. 宿舍，学生宿舍adj. 住宅区的
+     - On some campuses, when damages occurs on a **dormitory** floor and the person responsible is not identified, repairs costs are chaged to all those who live on the floor.
 
 
