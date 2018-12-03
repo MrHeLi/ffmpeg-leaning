@@ -2404,4 +2404,49 @@
      - n. 宿舍，学生宿舍adj. 住宅区的
      - On some campuses, when damages occurs on a **dormitory** floor and the person responsible is not identified, repairs costs are chaged to all those who live on the floor.
 
+# day 72: Chapter Sixteen:: Knowing yourself
+
+673. inventory
+
+     - n. 存货，存货清单；详细目录；财产清册
+     - To be complete, any **inventory** of them would have to include answers to the following questions.
+
+674. pessimistic
+
+     - adj. 悲观的，厌世的；悲观主义的
+     - Am I generally optimistic or **pessimistic**?
+
+675. poise
+
+     - n. 平衡；姿势；镇静vt. 使平衡；保持...姿势vi. 平衡；准备好；悬着
+     - Do I retain my **poise** and presence of mind in emergencies?
+
+676. sow
+
+     - vt. 播种；散布；使密布vi. 播种
+
+677. dissension
+
+     - n. 纠纷；意见不合；争吵；倾轧
+     - Do I enjoy causing trouble, **sowing** seeds of suspicion and dissension among people?
+
+678. gossip
+
+     - n. 小道传闻；随笔；爱说长道短的人vi. 闲聊；传播流言蜚语
+     - Do I rush to spread the latest **gossip**?
+
+679. criticize
+
+     - vt. 批评；评论；非难vi. 批评；评论；苛求
+
+680. ego
+
+     - n. 自我；自负；自我意识
+
+681. boost
+
+     - vt. 促进；增加；支援vi. 宣扬；偷窃n. 推动；帮助；宣扬
+     - Do i **criticize** other's real or imagined faults as a means of **boosting** my own **ago**?
+
+
 
