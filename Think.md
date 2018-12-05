@@ -2448,5 +2448,43 @@
      - vt. 促进；增加；支援vi. 宣扬；偷窃n. 推动；帮助；宣扬
      - Do i **criticize** other's real or imagined faults as a means of **boosting** my own **ago**?
 
+#day 73 Critical thinking inventory
+
+682. extend[to ... extend]
+     - vt. 延伸；扩大；推广；伸出；给予；使竭尽全力；对…估价vi. 延伸；扩大；伸展；使疏开
+     - **To what extend** do I think that "mine is better"?
+683. neat
+     - adj. 灵巧的；整洁的；优雅的；齐整的；未搀水的；平滑的
+684. tidy
+     - adj. 整齐的；相当大的vt. 整理；收拾；弄整齐vi. 整理；收拾
+     - Do I feel threatened by answers that are not **neat** and **tidy**?
+
+# Using your inventory
+
+685. thorough
+     - adj. 彻底的；十分的；周密的
+686. acknowledge
+     - vt. 承认；答谢；报偿；告知已收到
+     - First, answer all the questions in the critical thinking inventory honestly and **thoroughly**, **acknowledeging** not only the pleasant facts about yourself, but also the unpleasant ones.
+
+# Challenge and reward
+
+687. formidable
+     - adj. 强大的；可怕的；令人敬畏的；艰难的
+     - The latter tasks is **formidable** challenge.
+688. crucial
+     - adj. 重要的；决定性的；定局的；决断的
+     - In addition, more and more psychologists are affirming that thinking skills play a **crucial** role in our personal lives.
+689. psychotherapy
+     - n. 心理疗法；精神疗法
+690. therapy
+     - n. 治疗，疗法
+691. cognitive
+     - adj. 认知的，认识的
+     - The leading form of **psychotherapy** in this country, in fact, is **cognitive** **therapy**.
+692. wrestle
+     - n. 摔跤；搏斗；斗争vt. 与摔跤；与…搏斗；使劲搬动vi. 摔跤；斗争；斟酌
+     - To organize our thinking we must **werstle** with our own negative tendencies.
+
 
 
