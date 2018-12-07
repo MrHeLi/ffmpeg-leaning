@@ -2486,5 +2486,44 @@
      - n. 摔跤；搏斗；斗争vt. 与摔跤；与…搏斗；使劲搬动vi. 摔跤；斗争；斟酌
      - To organize our thinking we must **werstle** with our own negative tendencies.
 
+# day74:Applications
+
+693. settle
+
+     - vi. 解决；定居；沉淀；下陷vt. 解决；安排；使…定居n. 有背长椅
+
+     - Don’t settle for things you already know about yourself.
+
+694. propose
+
+     - vt. 建议；打算，计划；求婚vi. 建议；求婚；打算
+
+695. remidial
+
+     - adj. 治疗的；补救的；矫正的
+     - Specifically, these people **propose** that **remedial** courses be eliminated and entrance requirements tightened.
+
+696. Deficient
+
+     - adj. 不足的；有缺陷的；不充分的
+     - This would mean that students who are **deficient** in basic skills.
+
+697. norm
+
+     - n. 标准，规范
+
+     - The notion that an unmarried relationship is the equialent of marriage is an attack on social **norms**.
+
+698. Plagiarize
+
+     - vi. 剽窃；抄袭vt. 剽窃；抄袭
+     - Her professor determined that the paper was **plagiarized**.
+
+699. defamation
+
+     - n. 诽谤；中伤
+     - Simply a fancy new name for old-fashioned invasion of privacy, **defamation**, and violation of an actor’s right.
+
+
 
 
