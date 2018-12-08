@@ -2524,6 +2524,39 @@
      - n. 诽谤；中伤
      - Simply a fancy new name for old-fashioned invasion of privacy, **defamation**, and violation of an actor’s right.
 
+# day 75:Chapter seventeen:: Being observant
+
+700. subtlety
+     - n. 微妙；敏锐；精明
+     - Clear and sound thinking often depends on **subtleties** that are revealed only by close observation.
+
+# Observing people
+
+701. Clue
+     - n. 线索；（故事等的）情节vt. 为…提供线索；为…提供情况
+     - What people say and the way they say it can be valuable **clues** to their unspoken views and attitudes.
+702. fruitful
+     - adj. 富有成效的；多产的；果实结得多的
+703. Pursing-lips
+     - 缩拢的嘴
+704. frown
+     - vi. 皱眉；不同意vt. 皱眉，蹙额n. 皱眉，蹙额
+705. nod
+     - n. 点头；打盹；摆动vt. 点头；点头表示
+     - An occasional **nodding** of the head, an encourageing smile, even a low "uh-huh" of assent all signal "I'm in agreement with you." On the other hand, a slight shaking of the head, a raising of an **eyebrow** a **pursing of the lips** as the eyes roll upward, a **frown** , all suggest at least partial disagreements.
+706. betray
+     - vt. 背叛；出卖；泄露（秘密）；露出…迹象
+     - Similarly, people who are bored with a discussion will usually **betray** this feeling even if they are trying not to.
+707. resigned
+     - adj. 顺从的；已辞职的；己放弃的v. 辞职；顺从（resign的过去分词）
+708. sigh
+     - vi. 叹息，叹气n. 叹息，叹气vt. 叹息，叹气
+709. companion
+     - n. 同伴；朋友；指南；手册vt. 陪伴
+710. fidget
+     - vi. 烦躁；坐立不安；玩弄n. 烦躁；坐立不安；烦躁不安的人vt. 使不安；使烦乱
+     - The way they glance at their watches, **sigh** resignedly, turn their attention to someone or something outside the expected focus, nervously fidget with an article of their clothing, or shift position frequently communications their wish to change the subject or their companions.
+
 
 
 
