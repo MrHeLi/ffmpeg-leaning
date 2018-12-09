@@ -2557,6 +2557,39 @@
      - vi. 烦躁；坐立不安；玩弄n. 烦躁；坐立不安；烦躁不安的人vt. 使不安；使烦乱
      - The way they glance at their watches, **sigh** resignedly, turn their attention to someone or something outside the expected focus, nervously fidget with an article of their clothing, or shift position frequently communications their wish to change the subject or their companions.
 
+# day 76
+
+711. tone
+     - n. 语气；色调；音调；音色vt. 增强；用某种调子说vi. 颜色调和；呈现悦目色调
+     - Merely the  **tone** in which the greeting is expressed can suggest whether the people like.
+712. Aside from
+     - 除…以外
+     - And, as may be obvious, **aside from** the benefits to their thinking, careful attention is a great aid in making people more sensitive to and thoughtful of others.
+713. gait
+     - n. 步法，步态vt. 训练步法
+     - he will have seen the displeasure in the look and the resigned, “what’s the use” **gait**.
+714. Trial
+     - n. 试验；审讯；努力；磨炼adj. 试验的；审讯的
+715. studious
+     - adj. 用功的；热心的；专心的；故意的；适于学习的
+     - Similarly, every good **trial** lawyer must be a **studious** observer of people.
+
+# Observation in science and medicine.
+
+716. physician
+
+     - n. [医] 医师；内科医师
+
+717. divident
+
+     - n. 红利；股息；[数] 被除数；奖金
+
+718. fortuitous
+
+     - adj. 偶然的，意外的；幸运的
+     - Another well-known and extremely **fortuitous** occasion when the power of observation paid handsome **dividends** for humanity took place in 1929.
+
+
 
 
 
