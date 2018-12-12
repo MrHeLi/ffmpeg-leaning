@@ -2589,6 +2589,60 @@
      - adj. 偶然的，意外的；幸运的
      - Another well-known and extremely **fortuitous** occasion when the power of observation paid handsome **dividends** for humanity took place in 1929.
 
+# day 77
+
+719. molecular
+     - adj. [化学] 分子的；由分子组成的
+720. Statistic
+     - adj. 统计的，统计学的n. 统计数值
+
+# The range of application
+
+721. cite
+
+     - vt. 引用；传讯；想起；表彰
+
+722. occupation
+
+     - n. 职业；占有；消遣；占有期
+     - Countless examples of the benefits of close observation could be **cited** in every **occupation** and activity in life.
+
+723. steam
+
+     - vt. 蒸，散发；用蒸汽处理
+
+724. Degrease
+
+     - vt. 脱脂；去除……的油污
+
+725. foreman
+
+     - n. 领班；陪审团主席
+
+726. valve
+
+     - n. 阀；[解剖] 瓣膜；真空管；活门vt. 装阀于；以活门调节
+     - In a small upstate New York town a **steam** **foreman** named Eric Houck was **degreasing** **valves**.
+
+727. strip
+
+     - vt. 剥夺；剥去；脱去衣服n. 带；条状；脱衣舞
+
+728. Grime
+
+     - n. 尘垢；污点；煤尘vt. 使污秽；使…弄脏
+     - The chemicals had **stripped** off the **grime** and paint.
+
+729. lace
+
+     - n. 花边；鞋带；饰带；少量烈酒vt. 饰以花边；结带子vi. 系带子
+
+730. loafer
+
+     - n. 乐福鞋；懒汉鞋
+     - As instructor who wore **laced** shoes seemed to get consistently better results than one who wore penny **loafers**.
+
+
 
 
 
