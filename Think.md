@@ -2642,8 +2642,50 @@
      - n. 乐福鞋；懒汉鞋
      - As instructor who wore **laced** shoes seemed to get consistently better results than one who wore penny **loafers**.
 
+# day 78: Chapter Eighteen::Clarifying issues.
 
+731. scope
+     - n. 范围；余地；视野；眼界；导弹射程vt. 审视
+     - Many people make the **scope** of their analysis larger than they can manage.
 
+# How to clarify an issue
 
+732. rough
 
+     - adj. 粗糙的；粗略的；粗野的；艰苦的；未经加工的vt. 使粗糙；粗暴对待；草拟adv. 粗糙地；粗略地；粗暴地
+
+733. adequately
+
+     - adv. 充分地；足够地；适当地
+     - Seldom will you be able to treat all specific issues **adequately**.
+
+734. cluster
+
+     - n. 群；簇；丛；串vi. 群聚；丛生
+     - The issue of abortion is not merely a single issue but a **cluster** of smaller issues.
+
+735. refine
+
+     - vt. 精炼，提纯；改善；使…文雅
+     - You might **refine** the subheading into a question.
+
+736. stage
+
+     - n. 阶段；舞台；戏剧；驿站
+
+     - the **stage** of the pregnancy.
+
+737. incest
+
+     - n. 乱伦；近亲通婚
+     - Should cases of rape and **incest** be treated differently from other cases?
+
+738. impregnate
+
+     - vt. 使怀孕；灌输；浸透adj. 充满的；怀孕的
+     - That is, does the fact that the woman was raped or **impregnated** by a close relative create a special warrant for abortion?
+
+739. consent
+     - vi. 同意；赞成；答应n. 同意；（意见等的）一致；赞成
+     - Should parental **consent** be required before abortions are performed on minors?
 
