@@ -2689,3 +2689,42 @@
      - vi. 同意；赞成；答应n. 同意；（意见等的）一致；赞成
      - Should parental **consent** be required before abortions are performed on minors?
 
+# day 79 sample issue: Boxing
+
+740. sustain
+
+     - vt. 维持；支撑，承担；忍受；供养；证实
+
+741. prizefight
+
+     - n. 职业拳击赛；徒手拳
+     - The ring Record Book lists 337 professional boxers who have died from injuries **sustained** in **prizefights** since World War II.
+
+742. punch
+
+     - vi. 用拳猛击vt. 开洞；以拳重击
+
+743. barrage
+
+     - n. 弹幕；阻塞；齐射式攻击；[水利] 拦河坝vt. 以密集炮火进攻vi. 以密集火力阻击
+     - With the death of Kim, following a **barrage** of punches by Ray, an issue that had received the public's attention many times previously raged once again: Should boxing be outlawed?
+
+744. denial
+
+     - n. 否认；拒绝；节制；背弃
+     - Would the outlawing of boxing be an unfair **denial** of the boxer's right to earn a living?
+
+745. spectator
+
+     - n. 观众；旁观者
+     - Is the expression of violence that takes place in a boxing match an emotionally healthy experience for the **spectator**?
+
+746. render
+
+     - vt. 致使；提出；实施；着色；以…回报n. 打底；交纳；粉刷
+
+747. contestant
+
+     - n. 竞争者；争辩者
+
+     - That is, does the fact that the **contestants** aim to render each other senseless disqualify it from that classification?
