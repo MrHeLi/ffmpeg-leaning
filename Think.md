@@ -2726,5 +2726,40 @@
 747. contestant
 
      - n. 竞争者；争辩者
-
      - That is, does the fact that the **contestants** aim to render each other senseless disqualify it from that classification?
+
+# day 80 sample issue: Juvenile crime
+
+748. delinquent
+
+     - adj. 有过失的；怠忽的；拖欠债务的n. 流氓；行为不良的人；失职者
+     - Are juvenile **delinquents** alone resposible for their criminality?
+
+749. accountable
+
+     - adj. 有责任的；有解释义务的；可解释的
+     - Is it resonable to hold a fourteen-years-old as **accountable** as a twenty-one-year-old?
+
+750. deter
+
+     - vt. 制止，阻止；使打消念头
+     - Will publicizing young people's crimes **deter** juvenile crime?
+
+751. recidivism
+
+     - n. 再犯，累犯
+
+752. chronic
+
+     - adj. 慢性的；长期的；习惯性的
+     - Should **chronic** juvenile offenders be treated differently from first-time offenders?
+
+753. Competence
+
+     - n. 能力，胜任；权限；作证能力；足以过舒适生活的收入
+     - By identifying precisely the issue we wish to examine, we not only ensure a clearer focus and increase the chance that we will not exceed our **competency**.
+
+754. lessen
+
+     - vt. 使…变小；使…减轻；使…变少vi. 减少；减轻；变小
+     - Precise identification of  the issue **lessens** the chance of oversimplifying complex matters.
