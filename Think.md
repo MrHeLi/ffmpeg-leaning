@@ -2763,3 +2763,23 @@
 
      - vt. 使…变小；使…减轻；使…变少vi. 减少；减轻；变小
      - Precise identification of  the issue **lessens** the chance of oversimplifying complex matters.
+
+# day 81 Applications
+
+755. sane
+     - adj. 健全的；理智的；[临床] 神志正常的
+     - Is it possible for a **sane** person to commit suicide?
+756. prostitution
+     - n. 卖淫；滥用；出卖灵魂
+     - Should **prostitution** be legalized?
+757. outlaw
+     - n. 歹徒；罪犯；亡命之徒；被剥夺法律保护者vt. 宣布…为不合法；将…放逐；剥夺…的法律保护
+     - Should lobbying by special interest groups be **outlawed**?
+758. devil
+     - n. 魔鬼；撒旦；家伙；恶棍；淘气鬼；冒失鬼vt. 虐待，折磨；（用扯碎机）扯碎；（替作家，律师等）做助手；抹辣味料烤制或煎煮
+759. insane
+     - adj. 疯狂的；精神病的；极愚蠢的
+760. worship
+     - n. 崇拜；礼拜；尊敬t. 崇拜；尊敬；爱慕
+     - Are people who practice **devil** **worship** **insane**?
+
