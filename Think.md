@@ -2783,3 +2783,26 @@
      - n. 崇拜；礼拜；尊敬t. 崇拜；尊敬；爱慕
      - Are people who practice **devil** **worship** **insane**?
 
+# day 82 :Chapter Nineteen::conducting inquiry
+
+756. seek
+     - vt. 寻求；寻找；探索；搜索vi. 寻找；探索；搜索
+     - Inquiry is **seeking** answers to questions, investigating, gathering evidence to help us draw conclusions.
+
+# Some unquiry results inconclusive
+
+757. vital
+     - adj. 至关重要的；生死攸关的；有活力的
+758. organs
+     - n. [生物] 器官；机构；风琴（organ的复数）
+759. atrophy
+     - n. 萎缩，萎缩症；发育停止vi. 萎缩；虚脱
+760. malfunction
+     - vi. 发生故障；不起作用n. 故障；失灵；疾病
+     - Others believed that wightlessness would cause **vital** **organs** to **malfunction** and **atrophy**.
+761. dire
+     - adj. 可怕的；悲惨的；极端的
+     - Bothe **dire** predistions proved mistaken, but any inquiry into the issue undertaken before the first successful launch would necessarily have been incomplete.
+762. yield
+     - vt. 屈服；出产，产生；放弃vi. 屈服，投降
+
