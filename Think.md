@@ -2806,3 +2806,99 @@
 762. yield
      - vt. 屈服；出产，产生；放弃vi. 屈服，投降
 
+# day 83: Where to look for information
+
+763. indirectly
+
+     - 间接的
+
+     - even if what has happened to us or we have seen happen to others pertains only **indirectly** to the issue or touches just one aspect of it, it should not be overlooked.
+
+764. almanac
+
+     - n. 年鉴；历书；年历
+
+765. myriad
+
+     - adj. 无数的；种种的n. 无数，极大数量；无数的人或物
+
+766. treasury
+
+     - n. 国库，金库；财政部；宝库
+     - **Almanacs** are **treasuries** of information, published yearly, , on a **myriad** of subjects.
+
+767. Shelf
+
+     - n. 架子；搁板；搁板状物；暗礁
+
+768. catalog
+
+     - n. [图情][计] 目录；登记vt. 登记；为…编目录vi. 编目录；按确定价格收入目录（等于catalogue
+     - You can sonsult your library's card or computer **catalog**, the key to the books available on its **shelves**.
+
+769. obscure
+
+     - adj. 昏暗的，朦胧的；晦涩的，不清楚的；隐蔽的；不著名的，无名的vt. 使…模糊不清，掩盖；隐藏；使难理解
+     - Occasionally, if our library is small or if the issue you sre investigating is **obscure**, the library holdings may be limited.
+
+# day 84: How much inquiry is enough
+
+770. upset
+     - vt. 使心烦；颠覆；扰乱adj. 心烦的；混乱的；弄翻的vi. 翻倒
+     - A single fact can **upset** a mountain of evidence.
+771. Anthropology
+     - n. 人类学人类学家
+772. hut
+     - n. 小屋；临时营房
+773. dwelling
+     - n. 住处；寓所
+     - Though their land offers theirspace to spread out their settlements and **huts**, they crowd their **dwelling** together and often sit in tight groups, literally brushing against on another.
+774. truism
+     - n. 自明之理；老生常谈；老套；众所周知；真实性
+     - This one fact has caused reexamination of a scientific **truism**.
+775. anatomy
+     - n. 解剖；解剖学；剖析；骨骼
+
+# Day 85: Chapter twenty:: Interpreting evidence
+
+776. unearth
+
+     - vt. 发掘；揭露，发现；从洞中赶出
+     - An ancient tomb was **unearthed** in Central China, ontaining the body of a woman who died abut 2,100 years ago.
+
+777. airtight
+
+     - adj. 密闭的，密封的；无懈可击的
+
+778. Coffin
+
+     - n. 棺材
+     - She was placed in an **airtight** **coffin** filled with a special fluid.
+
+779. flesh
+
+     - n. 肉；肉体vt. 喂肉给…；使发胖
+
+780. moist
+
+     - adj. 潮湿的；多雨的；含泪的
+
+781. scalp
+
+     - n. 头皮；战利品vt. 剥头皮
+
+782. joint
+
+     - n. 关节；接缝；接合处，接合点；（牛，羊等的腿）大块肉adj. 共同的；连接的；联合的，合办的
+
+783. burial
+
+     - n. 埋葬；葬礼；弃绝adj. 埋葬的
+     - Because of this extraordinary **burial**, when the woman's body was found, the **flesh** was still **moist** , the hair still rooted in the **scalp** , the joints still flexible, most of the internal organs intact.
+
+784. autopsy
+
+     - n. 验尸；[病理][特医] 尸体解剖；[病理][特医] 尸体剖检
+     - Specialists conducted a careful **autopsy**.
+
+
