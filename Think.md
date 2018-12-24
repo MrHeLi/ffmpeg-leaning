@@ -2901,4 +2901,43 @@
      - n. 验尸；[病理][特医] 尸体解剖；[病理][特医] 尸体剖检
      - Specialists conducted a careful **autopsy**.
 
+# day 86: How to interpret
+
+785. pose
+
+     - vt. 造成，形成；摆姿势；装模作样；提出…讨论n. 姿势，姿态；装模作样
+
+     - Evidence from our own direct experience or observation poses diffrent questions that evidence given us by others and evidence obtained through research.
+
+786. Impediment
+
+     - n. 口吃；妨碍；阻止
+     - Were there any physical **impediments** such as my distance form what happened?
+
+787. Predispose
+
+     - vt. 预先处置；使…偏向于
+     - Was I **predisposed** to view the matter one way?
+
+788. comprehensive
+
+     - adj. 综合的；广泛的；有理解力的n. 综合学校；专业综合测验
+     - Not every research project is sufficiently **comprehensive** to answer the questions it proposes to answer.
+
+789. deformity
+
+     - n. 畸形；畸形的人或物；道德方面的缺陷
+
+790. Skull
+
+     - n. 头盖骨，脑壳
+     - One special distinguishing characteristic he believed all criminal possessed was a **skull** **deformity**.
+
+791. omit
+
+     - vt. 省略；遗漏；删除；疏忽
+     - It's important to remember that writers may, consciously or unconsciously, include the evidence that supports their view and **omit** any evidence that challenges is.
+
+
+
 
