@@ -2938,6 +2938,29 @@
      - vt. 省略；遗漏；删除；疏忽
      - It's important to remember that writers may, consciously or unconsciously, include the evidence that supports their view and **omit** any evidence that challenges is.
 
+# day 87:Making important distinctions
+
+792. shallow
+     - adj. 浅的；肤浅的n. [地理] 浅滩vt. 使变浅
+     - But the most admireable person can have a **shallow** mistaken view, adn the least admireable can have **profound** one.
+793. substance
+     - n. 物质；实质；资产；主旨
+     - style adn **substance** are quite different matters.
+794. eloquence
+     - n. 口才；雄辩；雄辩术；修辞
+     - Our concern with a man is not  with what **eloquence** he teches, but with what evidence.
+795. ding
+     - vi. 响；执拗地讲vt. 反复地说给人家听n. 钟声
+     - **Ding** out that a senator has connections with the handgun manufacturing indeustry.
+
+# finding the best interpretation
+
+796. reconcile
+
+     - vt. 使一致；使和解；调停，调解；使顺从
+     - The one that covers all the facts and **reconciles** conflicting opinions better thatn any other.
+
+
 
 
 
