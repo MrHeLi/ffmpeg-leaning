@@ -2960,6 +2960,317 @@
      - vt. 使一致；使和解；调停，调解；使顺从
      - The one that covers all the facts and **reconciles** conflicting opinions better thatn any other.
 
+# day 88: Chapter twenty-one::Analyzing ViewPoint
+
+797. Lie beyond
+     - 在…之外有,超过(能力等)
+     - In such cases the task confronting us **lies beyond** inquiry and interpretation of facts.
+
+# Understanding complex material
+
+798. jail
+
+     - n. 监狱；监牢；拘留所vt. 监禁；下狱
+
+799. pusher
+
+     - n. 推进器；推进式飞机；推销员；非法销售者
+     - Drug **pushers** should be given klong **jail** terms if they are not themselves drug users and have been previously convicted of drug pushing.
+
+800. Capitalize
+
+     - vt. 使资本化；以大写字母写；估计…的价值vi. 利用；积累资本
+
+801. Italicize
+
+     - vt. 在字下划横线；用斜体字排字；强调vi. 用斜体字
+     - **Capitalized** , underline, or **italicized** sentences are usually among the most improtant, as are assetions that are repeated, exactly or in different words.
+
+802. penetrate
+
+     - vt. 渗透；穿透；洞察vi. 渗透；刺入；看透
+     - But on emore step is necessary before we can achieve a **penetrating** analysis - to write an accurate summary of our understanding.
+
+803. prominence
+
+     - n. 突出；显著；突出物；卓越
+     - It should include all improtant assertions, with the central assertion given **prominence**.
+
+804. capsule
+
+     - n. 胶囊；[植] 蒴果；太空舱；小容器adj. 压缩的；概要的vt. 压缩；简述
+     - In short, it should be an accurate **capsule** version of the original.
+
+# day89: Raising questions
+
+805. evaporate
+
+     - vt. 使……蒸发；使……脱水；使……消失vi. 蒸发，挥发；消失，失踪
+     - Their anciety to do well, to succeed, to please their parents so fills their minds that all the natural joy in learning **evaporates**.
+
+806. drudgery
+
+     - n. 苦工，苦差事
+
+807. Oppressive
+
+     - adj. 压迫的；沉重的；压制性的；难以忍受的
+
+808. Marginal
+
+     - adj. 边缘的；临界的；末端的
+
+809. bluff
+
+     - n. 吓唬；绝壁；断崖vt. 吓唬；愚弄adj. 直率的；陡峭的
+
+810. conscientious
+
+     - adj. 认真的；尽责的；本着良心的；小心谨慎的
+     - As a result, **conscientous** students are driven to view their school work as **oppressive** **drudgery**, and **marginal** students are tempted to cheat and **bluff** their way to a degree.
+
+811. visceral
+
+     - adj. 内脏的；出于本能的；发自肺腑的；粗俗的
+     - It protects us from our own **visceral** reactions, and permits us to get beyond a blanket, overall yes or no and consider the position in its various parts.
+
+# day90: Chapter Twenty-Two:: Forming judgments
+
+812. spontaneous
+     - adj. 自发的；自然的；无意识的
+     - Unlike feelings, judgemtns are not **spontaneous** and unconscious.
+813. alter
+     - vt. 改变，更改vi. 改变；修改
+     - The act of expressing a judgemtn can **alter** it.
+
+# strive for a balanced view
+
+814. horde
+     - n. 一大群，群；游牧部落
+     - At such times, **hordes** of liberal thinkers sound alike.
+
+# day 91
+
+815. insult
+     - vt. 侮辱；辱骂；损害n. 侮辱；凌辱；无礼
+816. Prophet
+     - n. 先知；预言者；提倡者
+
+817. Moslems
+
+     - n. 穆斯林教徒
+     - Because the book profoundly insulted **Moslems** by ridiculing their religion and the **prophet** Mohammed, they reacted angrily.
+
+818. Rally
+
+     - n. 集会；回复；公路赛车会
+     - **Tallies** were held, and there were many gestrues of support for the author and his publishers.
+
+819. slogan
+
+     - n. 标语；呐喊声
+
+820. vast
+
+     - adj. 广阔的；巨大的；大量的；巨额的n. 浩瀚；广阔无垠的空间
+
+821. Crafted
+
+     - adj. 精心制作的v. 精巧地制作（craft的过去分词）
+     - "Freedom of expression" was the **slogan** the **vast** majority of writers and speakers **crafted** their reasoning around.
+
+822. chorus
+
+     - n. 合唱队；齐声；歌舞队vt. 合唱；异口同声地说
+     - A few writers chose to resist the temptation to join the **chorus** and instead called attention to another principle, one all but forgotten at the time - the principle of respect for the religious beliefs of others.
+
+
+# DAY 92 : Deal with probability
+
+823. liberate
+     - vt. 解放；放出；释放
+824. Fence
+     - n. 栅栏；围墙；剑术vt. 防护；用篱笆围住；练习剑术
+825. ride the fence
+     - 观望（骑墙）；检修牧场的篱笆
+826. deliberate
+     - adj. 故意的；深思熟虑的；从容的vt. 仔细考虑；商议
+     - As long as we have made a sincere effort to gain the evidence necessary to achieve certainly and are not **deliberately** choosing to **ride the fence**, there is no shame in admitting.
+827. virtue
+     - n. 美德；优点；贞操；功效
+
+# Make your subject appropriately specific
+
+
+
+828. proficient
+
+     - adj. 熟练的，精通的n. 精通；专家，能
+
+829. counterparts
+
+     - n. 副本；配对物；极相似的人或物
+     - Today's college students are less **proficient** in grammar and usage than their **counterparts** were ten years ago.
+
+# Day 93: make your predicate exact
+
+830. Predicates
+     - n. [数] 谓词，判断（predicate的复数）
+831. Judicious
+     - adj. 明智的；头脑精明的；判断正确的
+
+832. Ambiguilty
+     - n. 含糊；不明确；暧昧；模棱两可的话
+     - Unless we deliberately choose **ambiguity**, we should choose our **predicates** judiciously.
+
+# Avoid Exaggeration
+
+833. nomination
+     - n. 任命，提名；提名权
+     - Most of us know one or more people for whom every occasion "memorable," every enjoyable film is "worthy of an Academy Award **nomination**".
+834. Superlative
+     - adj. 最高的；最高级的；过度的n. 最高级；最好的人；最高程度；夸大话
+     - Their vocabulary is filled with **superlative**.
+835. Weary
+     - adj. 疲倦的；厌烦的；令人厌烦的vi. 疲倦；厌烦vt. 使疲倦；使厌烦
+     - We make such transltion willingly if the people exaggerating are clse friends. But we may still grow **weary** of the superlative.
+836. capstone
+     - n. 顶石；顶点
+     - It is the **capstone** to your capacity for thinking.
+
+# day 94: Some contemporary issues.
+
+837. comtemporary
+
+     - n. 同时代的人；同时期的东西adj. 当代的；同时代的；属于同一时期的
+     - a
+838. exercise
+
+     - n. 运动；练习；运用；操练；礼拜；典礼vt. 锻炼；练习；使用；使忙碌；使惊恐
+     - They are designed to provide **exercise** not only in forming careful judgments but also in the vaious steps leading to such judgments.
+839. superficially
+
+     - adv. 表面地；浅薄地
+     - As you have seen, it is better to treat one or two aspects in depth than a larger number **superficially**.
+840. negotiate
+
+     - vt. 谈判，商议；转让；越过
+841. contract
+
+     - vt. 谈判，商议；转让；越过n. 合同；婚约
+     - In recent years the **contract** **negotiation** of professional athletes have been give considerable attention by the news media.
+842. tenure
+
+     - n. 任期；占有vt. 授予…终身职位
+     - In education the term **tenure** means "permanent position."
+843. spous
+
+     - n. 配偶vt. 和…结婚
+     - In our culture young people are free to choose their own **spouses**.
+844. totalitarian
+     - adj. 极权主义的n. 极权主义者
+845. plot
+
+     - n. 情节；图；阴谋vt. 密谋；绘图；划分；标绘
+     - Many people belive that communists in Russia, China, and elsewhere are engaged in a **plot** to undermine other forms of government throughtout the world and to replace them with totalitarian communism.
+
+# day 95
+
+846. proponent
+
+     - n. 支持者；建议者；提出认证遗嘱者
+
+847. annual
+
+     - adj. 年度的；每年的n. 年刊，年鉴；一年生植物
+
+848. wage
+
+     - n. 工资；代价；报偿vt. 进行；
+
+849. poverty
+
+     - n. 贫困；困难；缺少；低劣
+
+850. bureaucracy
+
+     - n. 官僚主义；官僚机构；官僚政治
+
+851. Assured
+
+     - adj. 确定的；自信的n. 被保险人v. 保证；确实（assure的过去分词）
+
+852. Giant
+
+     - adj. 巨大的；巨人般的
+     - **Proponents** of a guarantted **annual** **wage** argue that by giving every adult person an **assured** amount of money, we would not only eliminate **poverty** and its terrible effects, but we would eliminate an entire **bureaucracy** - the  **giant** welfare system - and perhaps even save money.
+
+853. Applause
+
+     - n. 欢呼，喝采；鼓掌欢迎
+     - Laugh tracks and **applause** tracks are so much a part of television comedy shows that most people undoubtedly give them little thought.
+
+854. unevenly
+
+     - adv. 不均衡地；不平坦地；不平行地
+     - Historically in this countryhigh school and college atheletic budgets have been divided **unevenly**, with men's teams getting a larger share than women's.
+
+855. compulsory
+
+     - adj. 义务的；必修的；被强制的
+     - **Compulsory** education is so common today that we tend to forget it is a fairly recent historical development.
+
+856. assailant
+
+     - adj. 袭击的；攻击的n. 攻击者
+
+857. testimony
+
+     - n. [法] 证词，证言；证据
+     - In some states the **testimony** of a woman who has been raped is not considered sufficient to bring charges against her **assailant**.
+
+858. corroborate
+
+     - vt. 证实；使坚固
+     - There must be **corroborating** testimony.
+
+# day 96
+
+859. transmit
+
+     - vt. 传输；传播；发射；传达；遗传vi. 传输；发射信号
+
+860. enrage
+
+     - vt. 激怒；使暴怒
+     - He demonstrated that by "wiring" the brain of a fighting bull and merely pushing a button that **transmits** an electrical charge to the animal's brains, he can stop it in the middle of an **enraged** charge.
+
+861. parochial
+
+     - adj. 教区的；狭小的；地方范围的
+
+862. deduct
+
+     - vt. 扣除，减去；演绎
+
+863. tuition
+
+     - n. 学费；讲授
+     - Should the parents of students who attend private and **parochial** schools be allowed to deduct **tuition** expenses from their federal income tax returns.
+
+864. thorny
+
+     - adj. 多刺的；痛苦的；令人苦恼的
+
+865. custody
+
+     - n. 保管；监护；拘留；抚养权
+     - The government should have the right to remove children from their parent's **custody** whithout the parent's permission has long been a **thorny** legal and moral issue.
+
+866. prevalent
+
+     - adj. 流行的；普遍的，广传的
+     - One of the causes of the antisocial behavior that is so **prevalent** today, according to some analysts, is the fact that the old-fashioned hero has been largely replaced by the anti-hero.
 
 
 
