@@ -13,7 +13,7 @@
 - 发生在接口和类之间
 - Uml示例：一个指向超类的空心虚线空心三角箭头。如Teacher实现People可以这样表示：
 
-![](/Users/heli/github/ffmpeg-leaning/image/uml/class_realization.png)
+![](https://github.com/MrHeLi/ffmpeg-leaning/blob/master/image/class_realization.png)
 
 ## 泛化或继承（Generalization）
 
@@ -31,7 +31,7 @@ class Teacher extends People {
 
 - Uml示例：实线空心三角箭头
 
-  ![class_generalization](/Users/heli/github/ffmpeg-leaning/image/uml/class_generalization.png)
+  ![class_generalization](https://github.com/MrHeLi/ffmpeg-leaning/blob/master/image/class_generalization.png)
 
 ## 依赖 （dependency）
 
@@ -51,7 +51,7 @@ class B {
 
 - 关系线形状：虚线箭头
 
-![dependency](/Users/heli/github/ffmpeg-leaning/image/uml/dependency.png)
+![dependency](https://github.com/MrHeLi/ffmpeg-leaning/blob/master/image/dependency.png)
 
 ## 关联
 
@@ -76,7 +76,7 @@ class B {
 
 - 关系线形状：单向关联使用实线箭头，双向关联使用实线链接即可。下图为单向关联：
 
-![Directed Association](/Users/heli/github/ffmpeg-leaning/image/uml/Directed%20Association.png)
+![Directed Association](https://github.com/MrHeLi/ffmpeg-leaning/blob/master/image/Directed%20Association.png)
 
 ### 聚合
 
@@ -98,7 +98,7 @@ class Engine {
 
 - 关系线形状：空心菱形实线，由整体类指向个体类。
 
-![aggregation](/Users/heli/github/ffmpeg-leaning/image/uml/aggregation.png)
+![aggregation](https://github.com/MrHeLi/ffmpeg-leaning/blob/master/image/aggregation.png)
 
 ### 组合
 
@@ -120,5 +120,5 @@ Human作为一个整体，由Head和Heart组成，一旦Human的生命周期结�
 
 - 关系线形状：实心棱形实线，由整体指向个体类。
 
-![composition](/Users/heli/github/ffmpeg-leaning/image/uml/composition.png)
+![composition](https://github.com/MrHeLi/ffmpeg-leaning/blob/master/image/composition.png)
 
