@@ -15,7 +15,7 @@
 
 来张图说明一下handler-looper-message之间的关系。
 
-![](/Users/heli/Desktop/NativeHandler.png)
+![](https://github.com/MrHeLi/ffmpeg-leaning/blob/master/image/NativeHandler.png)
 
 ## AHandler
 
