@@ -2,20 +2,9 @@
 
 > AOSP Version: Oreo 8.0.0_r4
 
-所谓的Native Handler，只是我自己臆想出来的名词（或许也有前人创造了，但我没发现也说不定），用来对Android媒体框架中消息通信部分进行描述。之所以这么命名，主要基于如下几点：
-1. Android 媒体框架涉及到消息通信部分，主要由ALooper、AHandler、AMessage三个类组成，但并没有一个官方的名称，这对于写作来说，很不方便，总不能提到相关部分内容，就三个名词一起上吧。
-2. 之所以是Native，是因为这个框架涉及到的类，都位于Native层，实际上ALooper、AHandler、AMessage三个都是C++代码编写，起名Native名副其实。
-3. 至于Handler，借鉴Android 上层代码中的Handler机制名称，因为它们之间的逻辑，区别真的很小。
-
-该系列文章，会分为三个部分：
-* 介绍AHandler、ALooper源码。
-* 介绍AMessage源码：AMessage值得一说的地方太多了，就和其它两个类分开了。
-* 以Nuplayer为例，分析Native Handler在Android底层起到的作用。
 ## 简介
 
 来张图说明一下handler-looper-message之间的关系。
-
-![](https://github.com/MrHeLi/ffmpeg-leaning/blob/master/image/NativeHandler.png)
 
 ## AHandler
 
@@ -77,7 +66,7 @@ namespace android {
 void AHandler::deliverMessage(const sp<AMessage> &msg) {
     onMessageReceived(msg); // 直接调用纯虚函数（子类实现）onMessageReceived
     mMessageCounter++; // 消息计数器+1
-	  // 如果mVerboseStats为true，则会在mMessages中记录通过Handler处理的每一个Message的数量。
+	// 如果mVerboseStats为true，则会在mMessages中记录通过Handler处理的每一个Message的数量。
     // 这功能对阅读代码来说，基本没什么用。构造函数默认初始化列表直接把mVerboseStats设置成了false
     if (mVerboseStats) { 
         uint32_t what = msg->what();
@@ -111,7 +100,7 @@ void AHandler::deliverMessage(const sp<AMessage> &msg) {
 
 * 拥有一个mID，区别其它AHandler。
 
-* 持有一个ALooper的引用，//TODO 后面一定能够知道这个引用是用来做什么的。
+* 持有一个ALooper的引用，这个引用的主要作用是，在AMmessage构建时，可以通过AHandler获取ALooper的引用，进而调用ALooper的post接口，AMessage对象自己加入到消息队列中去。
 
 * 维护了一个mMessageCounter计数器，记录ahandler已经处理过的Message数。
 
@@ -166,7 +155,7 @@ private:
  	// Looper的名字，可以通过对应的set/get函数设置/获取该字段值
     AString mName; 
  
-    List<Event> mEventQueue; // 事件列表，所有的消息都会放进来，应该就是所谓的消息队列// TODO
+    List<Event> mEventQueue; // 事件列表，所有的消息都会放进来，这就是所谓的消息队列本尊了
  
     struct LooperThread; // 循环线程
     sp<LooperThread> mThread;
@@ -256,7 +245,7 @@ struct AReplyToken : public RefBase {
 private:
     friend struct AMessage;
     friend struct ALooper;
-    // 回复令牌中，保存了消息来源于那个looper，一个程序中looper可不止一个。它们彼此应该是靠mName区别TODO
+    // 回复令牌中，保存了消息来源于那个looper，一个程序中looper可不止一个。它们彼此应该是靠mName区别
     wp<ALooper> mLooper; 
     sp<AMessage> mReply; // 记录回复消息
     bool mReplied; // 本回复令牌的状态
@@ -389,6 +378,266 @@ loop函数，总共做了以下几件事情：
 
 可以看到，loop函数会根据实际情况，判断是否让线程等待。防止函数不断执行的无意义死循环，造成CPU资源的浪费。
 
+### start
+
+```c++
+status_t ALooper::start(bool runOnCallingThread, bool canCallJava, int32_t priority) {
+   if (runOnCallingThread) {
+       {
+            Mutex::Autolock autoLock(mLock);
+            if (mThread != NULL || mRunningLocally) {
+                return INVALID_OPERATION;
+            }
+            mRunningLocally = true; // mRunningLocally 为true意味着当前线程陷入loop的死循环
+        }
+        do {
+        } while (loop());
+        return OK;
+    }
+    Mutex::Autolock autoLock(mLock);
+    if (mThread != NULL || mRunningLocally) {
+        return INVALID_OPERATION;
+    }
+    mThread = new LooperThread(this, canCallJava);
+    status_t err = mThread->run(
+            mName.empty() ? "ALooper" : mName.c_str(), priority);
+    if (err != OK) {
+        mThread.clear();
+    }
+    return err;
+}
+```
+
+`ALooper::start`函数算是ALooper中的核心，称得上是NativeHandler机制中的发动机。那么，接下来就详细分析一下吧：
+
+#### runOnCallingThread
+
+这个入参决定了当调用线程调用`Alooper::start`函数后，取消息，发送消息的工作在当前线程执行，还是子线程执行。区别在于：
+
+* 如果`runOnCallingThread = true`：那么当前线程不会再做其它工作，陷入一个死循环。用于循环执行`loop()`函数。
+* 如果`runOnCallingThread = false`：会创建一个子线程，并将loop()逻辑放到这个特定子线程中处理。
+
+在继续往下分析之前，先喝瓶Dali牌西北……额，就，补充点基础知识。
+
+#### LooperThread&Thread
+
+LopperThread继承于Android的Thread，这个Thread其实是Android对Linux线程API的一个封装。
+
+> Android Thread源码路径：/system/core/libutils/Threads.cpp
+
+在这里，我们需要知道的是，Thread中有一个很重要的函数`int Thread::_threadLoop(void* user)`:
+
+```c++
+int Thread::_threadLoop(void* user) // user 是Thread的子类
+{
+    Thread* const self = static_cast<Thread*>(user);
+    // ......
+    bool first = true;
+    do {
+        bool result;
+        if (first) { // 如果是第一次运行，执行readyToRun函数
+            first = false;
+            self->mStatus = self->readyToRun();
+            result = (self->mStatus == NO_ERROR);
+
+            if (result && !self->exitPending()) {
+                result = self->threadLoop();
+            }
+        } else { // 不是第一次运行
+            result = self->threadLoop();
+        }
+	// ......
+      
+    } while(strong != 0);
+
+    return 0;
+}
+```
+
+`Thread::_threadLoop`:是Android Thread的主要工作函数，和java层线程类的`void run()`函数类似。实际上，`Thread::_threadLoop`的调用函数正是`Thread::run()`。run函数也是真正调用的Linux线程相关API，创建线程的地方。
+
+接下来看看`_threadLoop`函数做了什么事情：
+
+1. 如果是第一次执行，则执行子类的`readyToRun()`函数，最终根据返回值判断是否执行子类的`threadLoop();`
+2. 如果不是第一次执行，本身已经在流程中了，就不断地循环调用子类的`threadLoop();`函数。
+
+所以，Thread不管如何，都会执行子类的`threadLoop();`函数，执行具体的业务逻辑。
+
+```c++
+struct ALooper::LooperThread : public Thread {
+    LooperThread(ALooper *looper, bool canCallJava)
+        : Thread(canCallJava),
+          mLooper(looper),
+          mThreadId(NULL) {
+    }
+
+    virtual status_t readyToRun() {
+        mThreadId = androidGetThreadId();
+        return Thread::readyToRun();
+    }
+    virtual bool threadLoop() {
+        return mLooper->loop();
+    }
+    bool isCurrentThread() const {
+        return mThreadId == androidGetThreadId();
+    }
+    protected:
+    virtual ~LooperThread() {}
+private:
+    ALooper *mLooper;
+    android_thread_id_t mThreadId;
+
+    DISALLOW_EVIL_CONSTRUCTORS(LooperThread);
+};
+```
+
+再来看LooperThread，主要实现了两个虚函数：
+
+* `readyToRun()`: 该函数是线程第一次进入循环前会执行的函数，子类可以做一些线程循环开启前的准备工作。LooperThread在这里做了一个初始化`mThreadId`的动作。
+* `threadLoop()`: 这是处理业务逻辑的函数，整个线程循环中会不断调用。LooperThread在这里调用了`mLooper->loop();`，开启ALooper的轮询。当消息符合条件时发送消息，当没有符合条件的消息是就等待。
+
+好了，基础知识补充完了，让我们把目光移到start函数中剩下的部分：
+
+```c++
+mThread = new LooperThread(this, canCallJava);
+status_t err = mThread->run(
+    mName.empty() ? "ALooper" : mName.c_str(), priority);
+if (err != OK) {
+    mThread.clear();
+}
+```
+
+这段代码中，有哪些重点（或者不重点）呢？
+
+* canCallJava：这个boolean值是从start函数的入参传进来的，一直也没说。这个之最终会被传递到Android底层的Thread中，如果是true的话，表示线程是否使用JNI函数。默认值为true。
+
+* new LooperThread：创建一个LooperThread对象。
+
+* mThread->run：通过上一步创建的LooperThread对象，创建一个Android底层的Thread，并让这个线程运行起来，进入一个do—while循环，通过LooperThread的threadLoop函数，执行`mLooper->loop();`，于是循环队列的动作开始跑起来了。
+
+* priority：这涉及到了Android线程优先级的概念，优先级高的线程，在与优先级低的线程争夺CPU时，占有优势。优先级从0~11，从低~高。
+
+  ```c++
+  enum {
+      PRIORITY_LOWEST         = ANDROID_PRIORITY_LOWEST,
+      PRIORITY_BACKGROUND     = ANDROID_PRIORITY_BACKGROUND,
+      PRIORITY_NORMAL         = ANDROID_PRIORITY_NORMAL,
+      PRIORITY_FOREGROUND     = ANDROID_PRIORITY_FOREGROUND,
+      PRIORITY_DISPLAY        = ANDROID_PRIORITY_DISPLAY,
+      PRIORITY_URGENT_DISPLAY = ANDROID_PRIORITY_URGENT_DISPLAY,
+      PRIORITY_AUDIO          = ANDROID_PRIORITY_AUDIO,
+      PRIORITY_URGENT_AUDIO   = ANDROID_PRIORITY_URGENT_AUDIO,
+      PRIORITY_HIGHEST        = ANDROID_PRIORITY_HIGHEST,
+      PRIORITY_DEFAULT        = ANDROID_PRIORITY_DEFAULT,
+      PRIORITY_MORE_FAVORABLE = ANDROID_PRIORITY_MORE_FAVORABLE,
+      PRIORITY_LESS_FAVORABLE = ANDROID_PRIORITY_LESS_FAVORABLE,
+  };
+  ```
+
+  以上是线程优先级的全部定义。比如，我们的UI线程的优先级是：ANDROID_PRIORITY_DISPLAY
+
+#### 小结start函数
+
+* 决定消息轮询工作，是否放在当前线程执行。
+* 不管是否放在当前线程执行，都死循环执行loop函数，轮询消息队列，处理到时的消息。
+
+### registerHandler&unregisterHandler
+
+ALooper还有两个函数，用来注册AHandler和取消注册AHandler的。有什么用呢？先看看代码吧：
+
+```c++
+ALooperRoster gLooperRoster;
+ALooper::handler_id ALooper::registerHandler(const sp<AHandler> &handler) {
+    return gLooperRoster.registerHandler(this, handler);
+}
+void ALooper::unregisterHandler(handler_id handlerID) {
+    gLooperRoster.unregisterHandler(handlerID);
+}
+```
+
+不管是注册，还是取消注册，都掉了`gLooperRoster`的接口，它是个目前为止，不多见的类。结合命名和功能来看的话，作用应该是：专门管理注册的AHandler信息的“花名册”。
+
+#### ALooperRoster
+
+```c++
+namespace android {
+    struct ALooperRoster {
+        ALooperRoster();
+        ALooper::handler_id registerHandler( 
+            const sp<ALooper> &looper, const sp<AHandler> &handler); // 注册handler
+        void unregisterHandler(ALooper::handler_id handlerID); // 取消注册handler
+        void unregisterStaleHandlers(); // 取消注册陈旧的handler
+        void dump(int fd, const Vector<String16>& args);
+        private:
+        struct HandlerInfo { // handler信息的结构体，包含了ALooper和AHandler的引用
+            wp<ALooper> mLooper;
+            wp<AHandler> mHandler;
+        };
+        Mutex mLock;
+        KeyedVector<ALooper::handler_id, HandlerInfo> mHandlers; // 保存了HandlerInfo的vector
+        ALooper::handler_id mNextHandlerID;
+        DISALLOW_EVIL_CONSTRUCTORS(ALooperRoster);
+    };
+}  // namespace android
+```
+
+通过ALooperRoster的头文件可以看出：
+
+* ALooperRoster中，mHandlers是一个用户保存HandlerInfo的KeyedVector结构。以handler_id为key，HandlerInfo为value。
+* 而HandlerInfo中保存了在registerHandler函数中注册的AHandler指针和ALooper指针。
+
+接下来看看几个AHandler注册相关函数。
+
+##### registerHandler
+
+```c++
+ALooper::handler_id ALooperRoster::registerHandler(
+        const sp<ALooper> &looper, const sp<AHandler> &handler) {
+    Mutex::Autolock autoLock(mLock);
+
+    if (handler->id() != 0) { // handler的id初始化值为0。0表示没有注册过，非0表示已注册，不能再注册了
+        CHECK(!"A handler must only be registered once.");
+        return INVALID_OPERATION;
+    }
+
+    HandlerInfo info; // 封装 ALooper和AHandler
+    info.mLooper = looper;
+    info.mHandler = handler;
+    ALooper::handler_id handlerID = mNextHandlerID++; // mNextHandlerID + 1
+    mHandlers.add(handlerID, info); // 将封装好的HandlerInfo放到mHandlers中
+    handler->setID(handlerID, looper); // 已经注册好的handler的id设置为mNextHandlerID
+
+    return handlerID;
+}
+```
+
+函数依旧不复杂，AHandler有一个id，AHandler对象创建之初，id值默认为0。非0表示已经注册过了，不能继续注册。0表示没有被注册，没有被注册过的AHandler对象，和入参looper一起，被封装在一个HandlerInfo的对象中后，添加到了一个mHandlers的KeyedVector中，以handler_id为key，以HandlerInfo为value。最后将AHandler的id值改为加入时的mNextHandlerID值，并将looper设置到AHandler对象的mLooper字段中去，绑定起来。
+
+##### unregisterHandler
+
+```c++
+void ALooperRoster::unregisterHandler(ALooper::handler_id handlerID) {
+    Mutex::Autolock autoLock(mLock);
+    ssize_t index = mHandlers.indexOfKey(handlerID);
+	// ......
+    const HandlerInfo &info = mHandlers.valueAt(index);
+    sp<AHandler> handler = info.mHandler.promote();
+    if (handler != NULL) {
+        handler->setID(0, NULL);
+    }
+    mHandlers.removeItemsAt(index);
+}
+```
+
+registerHandler是将ALooper和AHandler封装后，以handlerId值为key，存到mHandlers中。
+
+unregisterHandler的操作，基本上与之相反，通过入参传入的handler_id值，从mHandlers取出AHandler，将它的id值设为0后，将注册时绑定的ALooper解绑。
+
+#### 小结registerHandler&unregisterHandler
+
+* registerHandler，直接调用ALooperRoster的registerHandler函数，将AHandler和ALooper对象封装一下，存入到一个名为mHandlers的Vector结构中，并是AHandler对象的id+1，AHandler和ALooper对象相互绑定。
+* unregisterHandler，直接调用ALooperRoster的unregisterHandler函数，从mHandlers取出指定id的AHandler，并将id置0，将绑定的ALooper对象解绑。
+
 ## AMessage
 
 AMessage可以算的上市整个消息系统中的核心接口了。自然，它的接口也比其它两个结构体复杂得多。
@@ -458,7 +707,7 @@ struct AMessage : public RefBase {
      */
     sp<AMessage> changesFrom(const sp<const AMessage> &other, bool deep = false) const;
 
-    AString debugString(int32_t indent = 0) const;// TODO 这是干啥的？
+    AString debugString(int32_t indent = 0) const;// 这是干啥的？可能是用来打印消息本身的，有兴趣的小伙伴可以自己试一下
     enum Type { // 消息中，item的类型
         kTypeInt32,
         kTypeInt64,
@@ -835,7 +1084,7 @@ deliver 也不复杂，咦，为啥说也？
 
 哎，简单的说一下需要注意的地方：
 
-* 关于mHandler：mHandler对象是AMessage中的私有字段，该字段唯一初始化的地方在前面讲过的AMessage::setTarget函数中。虽然，到现在，还没有分析整个消息机制工作流程，但我们可以大胆的猜想一下：AMessage实际只是消息的载体，消息只有发送出去了，被处理了才有意义。但是在AMessage的deliver（发送）函数中，却用到了一个mHandler对象。那么，可以考虑，mHandler对象，在消息创建之初便已经被初始化。换句话说，setTarget函数，在AMessage创建之初就会调用。这点，我希望在下一篇文章得到验证。TODO
+* 关于mHandler：mHandler对象是AMessage中的私有字段，该字段唯一初始化的地方在前面讲过的AMessage::setTarget函数中。虽然，到现在，还没有分析整个消息机制工作流程，但我们可以大胆的猜想一下：AMessage实际只是消息的载体，消息只有发送出去了，被处理了才有意义。但是在AMessage的deliver（发送）函数中，却用到了一个mHandler对象。那么，可以考虑，mHandler对象，在消息创建之初便已经被初始化。换句话说，setTarget函数，在AMessage创建之初就会调用。这点，我希望在下一篇文章得到验证。
 * 关于handler->deliverMessage：看到这里，该函数应该已经熟悉了，AHandler::deliverMessage函数什么都没做，直接将入参原封不动的通过onMessageReceived纯虚函数，交给子类处理了。子类怎么处理，关我屁事！！！！ 好吧，不急，后面分析具体事例的时候肯定会稍微提一下。
 
 #### post
@@ -897,7 +1146,7 @@ setObject("replyID", token);
 
 这段代码，直接通过mLooper获取一个回复令牌`AReplyToken`。并将回复令牌的指针当作自己的一个item存起来，key是“replyID”，值是刚刚获取的回复令牌。
 
-来来来，我们这里刨一个坑先。再来联想一下，在一个需要等待回复的函数调用中，创建了一个回复令牌，并将该令牌作为消息的一部分（一个item）存储起来，但在不需要回复的另一个函数中，却没有这种动作。是不是可以大胆的判断：TODO
+来来来，我们这里刨一个坑先。再来联想一下，在一个需要等待回复的函数调用中，创建了一个回复令牌，并将该令牌作为消息的一部分（一个item）存储起来，但在不需要回复的另一个函数中，却没有这种动作。是不是可以大胆的判断
 
 * 一个消息，如果有名为"replyID"的item，那么它就已经在准备返回了。
 * 如果没有“replyID”的item，那么它应该是处在创建或者刚加入到消息队列中，而没有被线程处理。
@@ -982,6 +1231,162 @@ bool AMessage::senderAwaitsResponse(sp<AReplyToken> *replyToken) {
 *  `*replyToken = static_cast<AReplyToken *>(tmp.get());`：如果有就将指针赋值给入参，供调用者差遣，最后将当前AMessage的回复令牌指针清掉，返回true。
 
 小结一下：根据代码的意思，很简单，就是将当前AMessage的回复令牌拿给别人用，自己不要了。clear之后，又是一具白花花的身体。
+
+## Native Handler实例分析（NuPlayer）
+
+Native Handler的使用，在Android multimudia框架中有很多使用，原因是，多媒体处理数据通常都需要很多线程来处理对媒体帧数据。但这些线程又需要保持**happens-before **关系，处理好同步问题。
+
+优秀的同步方案很多，但Android设计者还是选择了Native Handler的方案，和java层Handler机制保持了一致。
+
+下面就以NuPlayer的创建过程为例，简单分析一下，Native Handler在其中的作用。
+
+### NuPlayerDriver
+
+NuPlayer的创建过程，其实没那么简单，总入口在MediaPlayer中，中间又需要通过MediaPlayerService、打分机制来选择是否使用NuPlayer播放器、NuPlayerDriver这些结构体或者过程。
+
+> 如果对MediaPlayer感兴趣的，可以进传送门：[MediaPlayer源码分析](https://blog.csdn.net/qq_25333681/article/details/82056184)，在这里，你可以了解到，NuPlayer的创建，是如何一步步从MediaPlayer走来的。
+
+因为本文主旨是分析NativeHandler的使用，所以，就直接从NuPlayerDriver开始了。对NuPlayerDriver感兴趣的大兄弟，可以去看看我另一篇文章：传送门 TODO：将于近期更新
+
+先看看NuPlayerDriver的头文件：
+
+```c++
+struct NuPlayerDriver : public MediaPlayerInterface {
+	explicit NuPlayerDriver(pid_t pid);
+    sp<ALooper> mLooper;
+    const sp<NuPlayer> mPlayer;
+};
+```
+
+头文件里边的`mLooper`字段够醒目的，我们可以简单通过原理图回顾一下ALooper是干什么的：
+
+![](/Users/heli/github/ffmpeg-leaning/image/NativeHandler.png)
+
+* 它维护了一个消息队列mEventQueue。
+* 它有一个线程，不断地循环mEvnetQueue队列，找到符合发送条件的消息，交给AHandler去处理。
+
+接下来具体看一下NuPlayerDriver的构造：
+
+```c++
+NuPlayerDriver::NuPlayerDriver(pid_t pid)
+    : mState(STATE_IDLE),
+      mLooper(new ALooper),
+      mPlayer(new NuPlayer(pid)),
+      mLooping(false),
+      mAutoLoop(false) {
+    ALOGD("NuPlayerDriver(%p) created, clientPid(%d)", this, pid);
+    mLooper->setName("NuPlayerDriver Looper"); // 设置looper的名称
+    mLooper->start(
+            false, /* runOnCallingThread */
+            true,  /* canCallJava */
+            PRIORITY_AUDIO); // 启动looper中的线程。
+    mLooper->registerHandler(mPlayer); 
+    mPlayer->setDriver(this);
+}
+```
+
+可以看到，整个构造函数，基本都在为mLooper(ALooper)和mPlayer(NuPlayer)的初始化。先不管省略掉的代码，依次看看构造函数中都做了什么。
+
+1. 默认初始化列表中`new ALooper`，为mLooper初始化。
+2. 默认初始化列表中`new NuPlayer`,为mPlayer初始化。
+3. 在代码块中，设置looper的名称。
+4. 调用looper->start启动线程，开始循环消息队列。有疑问的同志，[ALooper](https://blog.csdn.net/qq_25333681/article/details/89289411)的**start**一节回顾一下。
+5. 为mLooper注册Handler，参数为mPlayer。从这里，我们知道，NuPlayer一定继承了AHandler。
+6. mPlyaer设置Driver，这对本文来说，看起来似乎没啥用。
+
+这里，着重强调一下第4步和第5步。
+
+从第4步开始ALooper中的线程就已经开始运行，不断地循环ALooper中的loop函数了。而loop函数的作用是从消息队列中去消息，找到合适的时间“发送”出去。但现在消息队列里什么都没有，线程会进入锁等待，直到被唤醒。
+
+第5步，registerHandler将mLooper绑定在mPlayer(也就是AHandler)中，添加到了一个ALooperRoster的花名册中去。详细请看[ALooper](https://blog.csdn.net/qq_25333681/article/details/89289411)的**registerHandler&unregisterHandler**一节。
+
+#### 小结NuPlayerDriver构造
+
+NuPlayerDriver构造的构造函数中，新建了一个ALooper对象，一个AHandler对象（new NuPlayer）。并让ALooper中的循环线程跑起来。
+
+### NuPlayer的onMessageReceived
+
+看过[AHandler](https://blog.csdn.net/qq_25333681/article/details/89289411)一文或者多少知道java层Handler机制的朋友，一定都知道，继承AHandler（java层是Handler）类，需要实现纯虚函数`onMessageReceived`（java层是onHandleMessage）。
+
+前面我们说到，NuPlayer继承了AHandler。那么来找找NuPlayer的onMessageReceived是怎么实现的吧。
+
+```c++
+void NuPlayer::onMessageReceived(const sp<AMessage> &msg) {
+    switch (msg->what()) {
+        case kWhatSetDataSource:
+        {
+            ALOGV("kWhatSetDataSource");
+        }
+        case kWhatGetDefaultBufferingSettings:
+	}
+    // ......
+}
+```
+
+代码不贴多了，意思一下就行。NuPlayer严重依靠NativeHandler机制传递消息，所以它的onMessageReceived函数需要处理的消息很多，case也很多。我们简单体会一下，onMessageReceived是怎么处理的就行了。
+
+ALooper和AHandler在NuPlayerDriver的构造中就已经创建了，那么AMessage呢？
+
+### NuPlayer中的AMessage
+
+我们来看一个最简单的使用AMessage的函数`NuPlayer::start()`:
+
+```c++
+void NuPlayer::start() {
+    (new AMessage(kWhatStart, this))->post();
+}
+```
+
+函数短小精悍，一如你……
+
+我们分成两步来看：
+
+1. new AMessage(kWhatStart, this)：
+
+   看起来就一步，但是啊，和很多少男少女约会一样，毛手毛脚的，小动作很多。还是弄一个图来说明一下吧。
+
+   ![](/Users/heli/github/ffmpeg-leaning/image/NativeHandler_AMessageNew.png)
+
+   创建Message时，会将通过setTarge函数，和handler（此处为NuPlayer对象）为该条Message的mTarget、mHandler、mLooper 字段赋值。这在后面有大用
+
+   再说另一个入参`kWhatStart`，对AMessage来说，这个也很重要，用于onMessageReceived中区分不同的case。
+
+2. post()：
+
+   AMessage中，如果post函数调用时，无参，将使用默认初始化参数。代码如下：
+
+   ```c++
+    status_t post(int64_t delayUs = 0);
+   ```
+
+   所以，它最终调用的还是有参构造。
+
+   还是用途来看一下：
+
+   ![](/Users/heli/github/ffmpeg-leaning/image/NativeHandler_AMessagePost.png)
+
+   新创建的AMessage对象，调用AMessage::post函数，将一默认的delayUs时间传递给looper执行。这个looper是通过new AMessage的过程中初始化的mLooper中获取的。
+
+   流程进入到ALooper控制。执行ALooper::post函数，该函数将delayUs时间和AMessage对象本身封装到一个Event结构中，最后加入到mEventQueue消息队列中去。
+
+   同时释放信号，将ALooper中等待的线程唤醒。执行LooperThread::threadLoop函数，该函数又调用`mLooper->loop();`，掉用到了ALooper中的loop函数中去。loop将消息队列中的消息取出，调用消息的deliver()函数，直到AHandler子类的onMessageReceived函数处理。整个流程才执行完毕。
+
+好了，实例分析到此结束，因为前面做了不少知识铺垫，所以这里讲的就比较简单，如果有不明白的，可以把该系列前面的文章拿来研究研究。
+
+### 总结NativeHandler的用法
+
+1. 首先要创建一个ALooper和一个AHandler(NuPlayer继承了AHandler实现了onMessageReceived，所以new NuPlayer就算是创建了一个AHandler)。并通过`ALooper::registerHandler`函数，将AHandler对象和ALooper对象绑定。
+2. 通过`mLooper->start`函数，启动消息队列的循环线程。
+3. 在需要发送消息的地方，直接创建AMessage对象，并将新的AMessage对象post的出去。
+4. AMessage对象被post后，继承了AHandler对象的类，会通过实现的onMessageReceived函数，接收到该AMessage对象，做进一步的处理。
+
+完了，就是这么简单。现在问题来了，原理分析完了，实例也不缺。
+
+系统分析Native Handler的初衷，是为了看懂Android底层MultiMedia框架部分关于消息传递的代码。现在来说，就很简单了，只要紧盯AMessage创建时，设置的消息tag是什么，在实现了onMessageReceived函数的地方，找到从AMeesage对象通过what()函数取出的tag所对应的case就可以了。
+
+当然，虽然自己实现一个底层播放器的机会比较少，但不排除有人去探索的。该系列文章也可以为自己实现播放器，需要处理多线程消息传递的哥们提供参考。需要使用哪些头文件啊，怎么实现之类的，去隔壁NuPlayer抄作业就好。
+
+那么就这样吧。
 
 ## 源码相关路径
 
