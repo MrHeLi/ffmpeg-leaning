@@ -28,9 +28,7 @@
 
 答案是否定的，它们之间还隔了一层framework的播放器，我想用一张图来说明这其中的关系。
 
-TODO：此处该有图
-
-
+![](https://github.com/MrHeLi/ffmpeg-leaning/blob/master/image/Android%E5%AA%92%E4%BD%93%E8%A7%A3%E7%A0%81%E5%85%B3%E7%B3%BB.png)
 
 嗯，没错，大概就是这样了。
 
@@ -136,7 +134,7 @@ status_t MediaPlayerService::Client::setDataSource(int fd, int64_t offset, int64
 
 考虑到扩展性，google工程师们使用了工厂模式，来管理播放器的创建和**评分机制**。这样，出了Android自己的内置播放器，各大Rom厂商也可以实现自己的播放器。我们来看看播放器相关工厂类的类图。
 
-TODO：这里应该有图，注意在staruml里边
+![](https://github.com/MrHeLi/ffmpeg-leaning/blob/master/image/%E6%92%AD%E6%94%BE%E5%99%A8%E5%B7%A5%E5%8E%82.png)
 
 播放器的创建，会使用`MediaPlayerFactory`的`createPlayer`函数。`MediaPlayerFactory`的`createPlayer`函数中，会根据片源情况，调用注册在`tFactoryMap`中的各个`IFactory`实现，获取对应的分值，获得最大分值的工厂类，调用该工厂类的`createPlayer`函数，最终创建出指定的播放器。
 
@@ -298,7 +296,9 @@ player_type MediaPlayerFactory::getPlayerType(const sp<IMediaPlayer>& client,
 
 ## scoreFactory
 
-回顾一下相关类图：TODO
+回顾一下相关类图：
+
+![](https://github.com/MrHeLi/ffmpeg-leaning/blob/master/image/%E6%92%AD%E6%94%BE%E5%99%A8%E5%B7%A5%E5%8E%82.png)
 
 `scoreFactory`函数是抽象类`IFactory`中的非抽象函数：
 
@@ -429,7 +429,9 @@ virtual float scoreFactory(const sp<IMediaPlayer>& /*client*/,
   4. url以字符串"http://"、"https://"、"file://"开头，且以".sdp"结尾，或者url中包含".sdp?"。
   5. 只要满足上述四种条件，那么得分都为0.8，否则为0.0。
 
-TODO，可以用一个图来描述一下这个过程。
+用一个图来描述一下这个过程。
+
+![](https://github.com/MrHeLi/ffmpeg-leaning/blob/master/image/%E8%AF%84%E5%88%86%E6%9C%BA%E5%88%B6.png)
 
 ## TestPlayerFactory
 
@@ -460,10 +462,3 @@ class TestPlayerFactory : public MediaPlayerFactory::IFactory {
 * 媒体框架会根据`getPlayerType`函数的返回类型，创建出一个对应的播放器。
 * `NuPlayerFactory`的`scoreFactory`函数的筛选过程实际上表明了`NuPlayer`所支持的媒体源类型。
 * 整个播放器框架扩展性非常强，有利于Rom产生定制自己的播放器。
-
-
-
-
-
-
-
