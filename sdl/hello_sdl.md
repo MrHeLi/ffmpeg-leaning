@@ -101,7 +101,7 @@ int main() {
 
 好了就是这么简单，运行看一下效果：
 
-![hello_sdl](/Users/heli/github/ffmpeg-leaning/sdl/hello_sdl.png)
+![hello_sdl](https://github.com/MrHeLi/ffmpeg-leaning/blob/master/sdl/hello_sdl.png)
 
 就是这么丑，我们后面会让它漂亮起来的。
 
