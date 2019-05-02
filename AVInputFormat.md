@@ -2,6 +2,8 @@
 
 ## AVInputFormat
 
+文档：[传送门](https://www.ffmpeg.org/doxygen/4.1/index.html)
+
 `AVInputFormat`是解复用器（解封装）作用时读取媒体文件并将其拆分为数据块（数据包）。每个数据包，包含一个或者多个编码帧
 
 比较重要的字段有：

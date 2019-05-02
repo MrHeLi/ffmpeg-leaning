@@ -1,5 +1,7 @@
 # FFmpeg: AVCodecContext结构体解析
 
+文档：[传送门](https://www.ffmpeg.org/doxygen/4.1/index.html)
+
 # AVCodecContext
 
 `AVCodecContext`也是FFmpeg使用过程中比较重要的结构体，保存了编解码器上下文相关信息。不管是编码，还是解码都会用到，但在两种不同应用场景中，结构体中部分字段作用和表现并不一致，这一点需要特别注意。
