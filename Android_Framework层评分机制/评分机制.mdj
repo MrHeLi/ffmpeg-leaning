@@ -20,6 +20,18 @@
 					"name": "Nuplayer",
 					"ownedViews": [
 						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAFqbmwnWucs3ws=",
+							"_parent": {
+								"$ref": "AAAAAAFqUkH1GEH0zdc="
+							},
+							"font": "Arial;13;0",
+							"left": 184,
+							"top": 120,
+							"width": 857,
+							"height": 505
+						},
+						{
 							"_type": "UMLClassView",
 							"_id": "AAAAAAFqUkLpb0H86Jo=",
 							"_parent": {
@@ -5457,6 +5469,20 @@
 							"propertyLabel": {
 								"$ref": "AAAAAAFqbA/jnQGcV7A="
 							}
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFqbmzLCOeBNnI=",
+							"_parent": {
+								"$ref": "AAAAAAFqUkH1GEH0zdc="
+							},
+							"fontColor": "#aaaaaa",
+							"font": "Arial;12;0",
+							"left": 624,
+							"top": 280,
+							"width": 97,
+							"height": 33,
+							"text": "by superdali"
 						}
 					]
 				},
