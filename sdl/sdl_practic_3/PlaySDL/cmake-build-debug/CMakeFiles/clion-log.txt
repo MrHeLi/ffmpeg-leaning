@@ -1,0 +1,6 @@
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/heli/CLionProjects/PlaySDL
+-- Configuring done
+WARNING: Target "PlaySDL" requests linking to directory "/usr/local/Cellar/sdl2/2.0.9_1//lib/".  Targets may link only to libraries.  CMake is dropping the item.
+WARNING: Target "PlaySDL" requests linking to directory "/usr/local/Cellar/sdl2_image/2.0.4//lib/".  Targets may link only to libraries.  CMake is dropping the item.
+-- Generating done
+-- Build files have been written to: /Users/heli/CLionProjects/PlaySDL/cmake-build-debug

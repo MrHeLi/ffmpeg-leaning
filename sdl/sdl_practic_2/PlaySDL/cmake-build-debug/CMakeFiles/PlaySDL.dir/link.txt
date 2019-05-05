@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/PlaySDL.dir/main.cpp.o  -o PlaySDL -lSDL2 -lSDL2_test -lSDL2main 

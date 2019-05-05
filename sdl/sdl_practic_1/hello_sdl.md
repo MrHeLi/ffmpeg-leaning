@@ -4,13 +4,15 @@ SDL官网：[https://www.libsdl.org/](https://www.libsdl.org/)
 
 SDL2.0文档地址:[http://wiki.libsdl.org/Introduction](http://wiki.libsdl.org/Introduction)
 
+参考YouTuber:Sonar Systems的教学视频，大家可以去关注学习一下。
+
 ## 简介
 
 直接翻译了一下官网介绍：
 
 简单的DirectMedia Layer是一个跨平台开发库，旨在通过OpenGL和Direct3D提供对音频，键盘，鼠标，操纵杆和图形硬件的低层访问。 它被视频播放软件，模拟器和流行游戏使用，包括Valve屡获殊荣的目录和许多Humble Bundle游戏。
 
-SDL正式支持Windows，Mac OS X，Linux，iOS和Android。 可以在源代码中找到对其他平台的支持。
+SDL支持Windows，Mac OS X，Linux，iOS和Android。 可以在源代码中找到对其他平台的支持。
 
 SDL是用C语言编写的，与C ++本身一起工作，并且有几种其他语言可用的绑定，包括C＃和Python。
 
@@ -18,7 +20,7 @@ SDL 2.0在zlib许可下分发。 此许可证允许您在任何软件中自由�
 
 ## SDL开发包位置
 
-用命令：`brew info sdl`
+用命令：`brew info sdl2`
 
 ```shell
 Superli-2:ffmpeg-leaning superli$ brew info sdl2
@@ -93,8 +95,8 @@ int main() {
             }
         }
     }
-    SDL_DestroyWindow(window); // 推出SDL窗体
-    SDL_Quit(); // SDL推出
+    SDL_DestroyWindow(window); // 退出SDL窗体
+    SDL_Quit(); // SDL退出
     return 0;
 }
 ```
@@ -105,5 +107,10 @@ int main() {
 
 就是这么丑，我们后面会让它漂亮起来的。
 
+## 代码调用流程
 
+对代码中使用的对象和函数，作简要分析。调用流程如下：
 
+![sdl_process_1](/Users/heli/github/ffmpeg-leaning/sdl/sdl_practic_1/sdl_process_1.png)
+
+代码中具体函数的作用，请参见源码注释或官方文档，图方便的话，也可以看本系列文章。
