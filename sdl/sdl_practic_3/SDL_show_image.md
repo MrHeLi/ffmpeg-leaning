@@ -173,4 +173,4 @@ target_link_libraries(PlaySDL SDL2 SDL2_image) # 链接SDL2_image库
 
 
 
-TODO：github源码链接
+[github源码链接](https://github.com/MrHeLi/ffmpeg-leaning/tree/master/sdl/sdl_practic_3/PlaySDL)

@@ -111,6 +111,10 @@ int main() {
 }
 ```
 
+先来看一下显示效果：
+
+![sdl_play_4](/Users/heli/github/ffmpeg-leaning/sdl/sdl_practic_4/sdl_play_4.png)
+
 ##  YUV数据提取
 
 这里需要讲一下关于YUV数据填充的部分，即：
@@ -157,4 +161,6 @@ SDL_Window](https://blog.csdn.net/qq_25333681/article/details/89787867)
 
 [SDL2常用函数&结构分析:SDL_Texture&SDL_CreateTexture&SDL_UpdateTexture](https://blog.csdn.net/qq_25333681/article/details/90083753)
 
-Todo:github地址。
+github地址：
+
+[代码github地址](https://github.com/MrHeLi/ffmpeg-leaning/tree/master/sdl/sdl_practic_4/PlaySDL)
