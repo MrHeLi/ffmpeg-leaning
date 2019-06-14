@@ -330,7 +330,7 @@ we are happy
 we%20are%20happy
 ```
 
-解：C++
+### 解：C++
 
 C++的代码和Java代码几乎一致：
 
@@ -376,6 +376,257 @@ we are happy
 we%20are%20happy
 ```
 
+# 链表
 
+和数组不同，链表是一种动态的数据结构，在创建时并不需要知道他的长度。链表的结构很简单，它通过指针（C/C++中）或者引用（Java中）将若干个节点连接成链状结构。
 
+在链表中插入一个节点时，我们只需要为新节点分配内存，然后调整指针或引用的指向即可。因为内存是在使用过程中动态分配，不会出现空闲内存得不到利用的情况，因此链表的空间效率比数组高。
+
+## C/C++中的链表
+
+在C/C++中，单向链表节点定义如下：
+
+```c++
+struct ListNode {
+    int mValue;
+    ListNode *m_pNext;
+};
+```
+
+而添加节点到链表中的函数如下：
+
+```c++
+void add2Tail(ListNode** pHead, int value) {
+    ListNode *pNew = new ListNode();
+    pNew->mValue = value;
+    pNew->m_pNext = NULL;
+
+    if (*pHead == NULL) {
+        *pHead = pNew;
+    } else {
+        ListNode *pNode = *pHead;
+        while(pNode->m_pNext != NULL) {
+            pNode = pNode->m_pNext;
+        }
+        pNode->m_pNext = pNew;
+    }
+}
+```
+
+空链表意味着一个节点也没有，代表链表的指针值为NULL，为了便于向空链表中添加节点，我们需要该表链表指针指向新增的第一个节点位置，所以，在`void add2Tail(ListNode** pHead, int value)`函数中使用了双指针。
+
+因为链表中，节点的内存不能确保连续，因此想要查找第i个节点，只能从头结点开始，沿指针往下遍历链表，时间效率为$O_{(n)}$，而数组的时间效率为$O_{(1)}$。下面是查找到第一个含有某值的节点，并删除的代码。
+
+```c++
+void removeNode(ListNode **pHead, int value) {
+    if (pHead == NULL || *pHead == NULL) {
+        return;
+    }
+
+    ListNode *pDeleteNode = NULL;
+    if ((*pHead)->mValue == value) {
+        pDeleteNode = *pHead;
+        *pHead = (*pHead)->m_pNext;
+    } else {
+        ListNode *pNode = *pHead;
+        while (pNode->m_pNext != NULL && pNode->m_pNext->mValue != value) {
+            pNode = pNode->m_pNext;
+            if (pNode->m_pNext != NULL && pNode->m_pNext->mValue == value) {
+                pDeleteNode = pNode->m_pNext;
+                pNode->m_pNext = pNode->m_pNext->m_pNext;
+            }
+        }
+    }
+
+    if (pDeleteNode != NULL) {
+        delete pDeleteNode;
+        pDeleteNode = NULL;
+    }
+}
+```
+
+## Java中的链表
+
+Java中以链表为底层结构的是集合框架中的`LinkedList`。`LinkedList`中的链表为双向链表，来看看它的链表节点实现：
+
+```java
+private static class Node<E> {
+    E item;
+    Node<E> next;
+    Node<E> prev;
+    Node(Node<E> prev, E element, Node<E> next) {
+        this.item = element;
+        this.next = next;
+        this.prev = prev;
+    }
+}
+```
+
+每个节点都会保存前后节点的引用，双向链表对于单向表的优势在于可以双向搜索。
+
+在链表末尾添加元素：
+
+```java
+/**
+ * Links e as last element.
+ */
+void linkLast(E e) {
+    final Node<E> l = last;
+    final Node<E> newNode = new Node<>(l, e, null);
+    last = newNode;
+    if (l == null)
+        first = newNode;
+    else
+        l.next = newNode;
+    size++;
+    modCount++;
+}
+```
+
+链表对于数组的优势在于可以高效的删除或者替换节点，删除或者替换时，只需要将关联的指针或者引用替换到下一个节点就行了。
+
+因为`LinkedList`关于链表的操作封装的足够强大，所以在Java中，很少会见到自己实现链表。对于面向对象的语言来说，如非必要，尽量使用已有API是最大的美德。
+
+但因为单链表相对于其他数据结构来说，实现简单，可以在20行代码内实现，这对于不长的面试时间来说十分合适，所以经常能在面试中遇到。
+
+## 面试题 5：从尾到头打印链表
+
+### 题目
+
+输入一个链表的头结点，从尾到头反向打印出每个节点的值。
+
+链表节点定义如下：
+
+```c++
+struct ListNode {
+    int m_Key;
+    ListNode *m_pNext;
+};
+```
+
+### 分析
+
+**第一种**：因为是单向链表，只能从头到尾遍历，但题却要求反向遍历。也就是第一个被遍历的节点最后打印，最后一个遍历的节点第一个打印，典型的后进先出。首先想到用栈来存储遍历节点，最后从栈中输出。
+
+**第二种**：说到栈结构的话，自然能想到我们的函数调用栈也是一种后进先出的模型。利用这一点，也可以用递归来解题。但在使用递归时需要注意，链表的长度并不固定，如果太长，将会使函数栈嵌套过深导致栈溢出。
+
+鉴于递归会导致栈溢出的问题，不管是在面试还是在实际编码过程中都需要谨慎使用。其实上面两种解法，通常都是可以替换的。
+
+### 解：C++
+
+第一种解法：显示栈解
+
+```c++
+void printListReverse_1(ListNode *pHead) {
+    std::stack<ListNode *> nodes;
+
+    ListNode *pNode = pHead;
+    while (pNode != NULL) {
+        nodes.push(pNode);
+        pNode = pNode->m_pNext;
+    }
+    while (!nodes.empty()) {
+        pNode = nodes.top();
+        cout << pNode->m_Key << " ";
+        nodes.pop();
+    }
+    cout << endl;
+}
+```
+
+第二种解法：递归栈解
+
+```c++
+void printListReverse_2(ListNode *pHead) {
+    ListNode *pNode = pHead;
+    if (pNode->m_pNext != NULL) {
+        printListReverse_2(pNode->m_pNext);
+    }
+    cout << pNode->m_Key << " ";
+}
+```
+
+调用：
+
+```c++
+int main() {
+    ListNode *head;
+    add2Tail(&head, 0);
+    add2Tail(&head, 1);
+    add2Tail(&head, 2);
+    add2Tail(&head, 3);
+    printListReverse_1(head);
+    printListReverse_2(head);
+    return 0;
+}
+```
+
+### 解：Java
+
+对于解法来讲，需要一个栈，但恍惚觉得栈类似的API在Java中应该并不存在。真的是这样吗？
+
+Google了一下，居然真有这么个类：`Stack`。它是Vector的子类。好吧，那就用起来呗。
+
+```java
+import java.util.Stack;
+
+public class Main {
+    static class LinkNode {
+        int mValue;
+        LinkNode mNext;
+    }
+
+    static class SingleLink {
+        public static LinkNode mHead;
+
+        public void add2List(int value) {
+            LinkNode newNode = new LinkNode();
+            newNode.mValue = value;
+            newNode.mNext = null;
+
+            if (mHead == null) {
+                mHead = newNode;
+            } else {
+                LinkNode node = mHead;
+                while (node.mNext != null) {
+                    node = node.mNext;
+                }
+                node.mNext = newNode;
+            }
+        }
+
+        public void printReverse_1() { // 显示栈解法
+            Stack<LinkNode> stack = new Stack<>();
+            LinkNode node = mHead;
+            while (node != null) {
+                stack.push(node);
+                node = node.mNext;
+            }
+
+            while (!stack.empty()) {
+                node = stack.pop();
+                System.out.print(node.mValue + " ");
+            }
+            System.out.println();
+        }
+
+        public void printReverse_2(LinkNode node) { // 递归解法：这里需要传表头节点
+            if (node.mNext != null) {
+                printReverse_2(node.mNext);
+            }
+            System.out.print(node.mValue + " ");
+        }
+    }
+
+    public static void main(String args[]) {
+        SingleLink singleLink = new SingleLink();
+        singleLink.add2List(0);
+        singleLink.add2List(1);
+        singleLink.add2List(2);
+        singleLink.add2List(3);
+        singleLink.printReverse_1();
+        singleLink.printReverse_2(singleLink.mHead);
+    }
+}
+```
 
