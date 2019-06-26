@@ -1,3 +1,5 @@
+继续错误的代价有别人承担，而承认错误的代价由自己承担——Joseph Stiglitz
+
 # 任务
 
 线程可以驱动任务，描述任务由Runnable接口提供。定义任务只需要实现Runnable接口，重写run()函数即可。需要注意的是，这个run()函数并不会产生任何内在线程的能力，要实现线程行为，必须显示地将任务附着到线程上。
@@ -75,3 +77,56 @@ yield()函数可以给线程调度机制一个暗示：你的工作已经做得�
 当yield()被调用时，你也是在建议具有相同优先级的其他线程可以运行。
 
 实际上，对于任何重要的控制，都不能依赖于yield()。
+
+# 后台线程
+
+所谓的后台线程（daemon），是指在程序运行的时候在后台提供一种通用服务的线程，当所有非后台线程结束时，程序也就终止了，同时会杀死进程中的所有线程。
+
+必须在线程启动之前调用setDaemon()方法，才能把它设置为后台线程。
+
+# 异常
+
+由于线程的本质特性，使得你不能捕获从线程中逃逸的异常。一旦异常逃出任务的run()方法，他就会想外传播到控制台。
+
+Thread.UncaughtExceptionHandler是Java SE5中的新接口，允许你在每个Thread对象上都附着一个异常处理器。Thread.UncaughtExceptionHandler.uncaughtException()会在线程因未捕获的异常而临近死亡时被调用。
+
+```java
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadFactory;
+
+public class Main {
+    static class ExceptionThread implements Runnable {
+        @Override
+        public void run() {
+            Thread t = Thread.currentThread();
+            throw new RuntimeException();
+        }
+    }
+  
+    static class MyUncaughtExceptionHandler implements Thread.UncaughtExceptionHandler {
+        @Override
+        public void uncaughtException(Thread t, Throwable e) {
+            System.out.println("caught " + e);
+        }
+    }
+
+    static class HandlerThreadFactory implements ThreadFactory {
+        @Override
+        public Thread newThread(Runnable r) {
+            Thread t = new Thread(r);
+            t.setUncaughtExceptionHandler(new MyUncaughtExceptionHandler());
+            return t;
+        }
+    }
+  
+    public static void main(String[] args) {
+        ExecutorService exec = Executors.newCachedThreadPool(new HandlerThreadFactory());
+        exec.execute(new ExceptionThread());
+    }
+}
+```
+
+# 共享资源和竞争
+
+线程使用时的一个基本的问题是：你永远不知道一个线程何时在运行。想象一下，你坐在桌边手拿叉子，正要去叉盘中最后一块肉，当你的叉子就要够着它时，这便食物突然消失了，因为你的线程被挂起，另一个进餐者吃掉了它。
