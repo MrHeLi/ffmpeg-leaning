@@ -1581,6 +1581,331 @@ public static int min(int[] arr) {
     }
 ```
 
+
+
+# 面试题 9：斐波那契数列
+
+## 题目：
+
+写一个函数，输入n，求斐波那契（Fibonacci）数列的第n项。斐波那契数列的定义如下：
+$$
+f(n)=
+	\begin{cases}
+		0, & \text{$n = 0$}\\
+		1, & \text{$n = 1$}\\
+		f(n - 1) + f(n - 2),& \text{$n > 1$}
+	\end{cases}
+$$
+## 分析
+
+首先想到的是利用递归来解，如：
+
+```java
+public static int fibonacci(int n) {
+    if (n <=0 ) {
+        return 0;
+    } else if (n == 1) {
+        return 1;
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
+```
+
+该解法确实简单，很快就可以实现。让我们来分析一下：
+
+我们以求解$f(10)$为例分析求解过程。想要求$f(10)$就的求$f(9)$和$f(8)$，想要求$f(9)$需要先求$f(8)$和$f(7)$，同样想要求$f(8)$，又得先求$f(7)$和$f(6)$ ... 我们可以以树结构表达这种依赖关系。
+
+![Fibonacci](.\Fibonacci.JPG)
+
+不难发现，书中有很多节点重复，这意味着计算量会随着n的增大而急剧增大，事实上，用递归计算的时间复杂度是以n的指数递增的。我试了一下，当n为45时，就能很明显的发现获得结果需要等待一小会儿了。
+
+## 改进
+
+上面递归代码之所以慢是因为重复计算过多，当我们的递归从小往大计算时，第n次的结果总是前两次之后，而前两次刚好再前面两次已经计算过并记录了。
+
+```java
+public static void main(String args[]) {
+    System.out.println(fibonacci1(1000));
+}
+
+public static int fibonacci1(int n) {
+    int[] result = {0, 1};
+    if (n < 2) {
+        return result[n];
+    }
+    int preNumberOne = 1;
+    int preNumberTwo = 0;
+    int number = 0;
+    for (int i = 2; i <= n; i++) {
+        number = preNumberOne + preNumberTwo;
+        preNumberTwo = preNumberOne;
+        preNumberOne = number;
+    }
+    return number;
+}
+```
+
+# 斐波那契数列的运用：青蛙跳台阶
+
+## 题目
+
+一只青蛙可以跳上1级台阶，也可以跳上2级台阶。求该青蛙跳上一个n级台阶总共有多少种跳法。
+
+## 分析
+
+首先考虑最简单的情况，如果只有一级台阶，青蛙第一次跳的时候，显然只有一种跳法。如果有2级，有两种跳法：一种是跳一级、一种是跳两级。
+
+再看一般情况，假如青蛙跳n级台阶总共有$F{(n)}$ 种跳法，当n > 2 时，第一次有两种不同的选择：1. 只跳1级，此时跳法数据等于后面剩下的n - 1级台阶的跳法数目，即 $ F(n - 1)$。2. 只跳2级，此时跳法数目等于后面剩下的n - 2级台阶的跳法数目，即$ F(n - 2)$ 。因此n级台阶的不同跳法总数为$F(n) = F(n - 1) + F(n - 2)$。不难看出，这就是一个斐波那契数列。
+
+# 斐波那契数列的运用：矩形覆盖
+
+## 题目
+
+我们可以用2 x 1的小矩形横着或者竖着去覆盖更大的矩形。请问用8个 2 x 1的小矩形无重叠地覆盖一个 2 x 8的大巨星，总共有多少种方法？矩形如图：
+
+![fugai](.\fugai.JPG)
+
+## 分析
+
+先把2 x 8的覆盖方法次数记为$F(8)$ ， 用1x2的矩形第一次覆盖到2x8上有两种方式：
+
+1. 竖着盖在最左边，此时的覆盖次数有$F(7)$。 
+2. 横着覆盖最左上角， 此时覆盖次数记为$F(6)$。
+3. 所以，对于2x8的矩形区域，$F(8) = F(7) + F(6)$
+
+显然，又是一个斐波那契数列。
+
+## 结语
+
+斐波那契数列相关题目特征：
+1. 每个步骤有两种不同的操作。
+2. 有0和1两个解。
+3. 经过两个不同操作后，问题规模将会得到不同程度的降低。
+
+
+# 面试题 11：数值的整数次方
+
+## 题目
+
+实现函数 `double power(double base, int exponent)`，求base的 exponent次方。不得使用库函数，同时不需要考虑大数问题。
+
+## 分析
+
+因为不用考虑大数问题，所以，这个题看起来很简单。只需要将base累计乘以exponent次就可以了。如果是这样的话，你就掉进陷阱了。该题考查的是考虑问题的全面性。power函数，如果输入小于1，即零和负数时怎么办，如果用累乘的方式，就只考虑到整数的情况。
+
+我们知道，当指数为负数的时候，可以先对指数求绝对值，算出结果后取倒数即是结果。因为需要求倒数，我们就需要考虑是否有可能对0求倒数，如果有，因此产生的异常如何处理？
+
+需要指出的是，由于0的0次方在数学上是没有意义的，因此无论是输出0还是1都是可以接收的，但这都需要和面试官说清楚，表明我们已经考虑到这个边界值了。
+
+## 解：java
+
+```java
+static boolean isInvalidInput = false;
+private static boolean equals(double num1, double num2) {
+    return (num1 - num2 > -0.0000001) && (num1 - num2 < 0.00000001);
+}
+
+private static int absInt(int num) {
+    if (num < 0) {
+        num = -num;
+    }
+    return num;
+}
+
+private static double power(double base, int exponent) {
+    if (equals(base, 0.0)) {
+        isInvalidInput = true; // 表示输入非法
+        return 0.0;
+    }
+    if (equals(base, 1.0) || exponent == 0) { // 如果底数为1， 不用算，返回就好
+        return 1.0;
+    }
+
+    int absExponent = absInt(exponent);
+    double result = 1.0d;
+    for (int i = 0; i < absExponent; i++) {
+        result *= base;
+    }
+    if (exponent < 0) {
+        result = 1.0 / result;
+    }
+    return result;
+}
+
+public static void main(String args[]) {
+    System.out.println(power(2, 0));
+}
+```
+
+需要注意的是，我们在判断浮点型数字是否相等时，不能直接这样判断`base == 0.0`，这是因为在计算机内表示小数时有误差。判断两个小数是否相等，只能判断它们只差的局对峙是不是在一个很小的范围内。如果两个数相差很小，就可以认为它们相等，这是在代码中使用自己实现`equals`的原因。
+
+# 面试题 12：打印1到最大的n位数
+
+## 题目
+
+输入数字n，按顺序打印出从1到最大的n位十进制数。比如输入3，则打印出1、2、3一直到最大的3位数即999。
+
+## 分析
+
+如果不作分析，可能直接就会采用：算出n位数的最大值，然后循环输出就完事儿了。但这个题显然不是这么简单，题目中没有给n做任何限定，如果n的值很大，那么不管是double还是long类型都无法承担存储大数的责任。
+
+在java中处理大数大概有三种方案：
+
+* 使用String模拟大数，需要自己实现加法操作。
+* 使用数组模拟大数，也需要自己实现加法操作。
+* 使用BigDecimal。
+
+本例中，使用int数组来模拟大数操作。
+
+## 解：java
+
+```java
+public static void main(String args[]) {
+    printToMaxNDigits(2);
+}
+public static void printToMaxNDigits(int n) {
+    if (n <= 0) { // 输入边界检查，防止-1、0之类的非法输入
+        return;
+    }
+    int[] number = new int[n];
+    while(increment(number)) { // increment的作用是 + 1，+ 1成功返回true，去打印否则结束循环
+        printNumber(number);
+    }
+}
+private static boolean increment(int[] number) {
+    if (number == null || number.length == 0) { // 可能出现的边界检查
+        throw new IllegalArgumentException("number is empty");
+    }
+
+    for (int i = number.length - 1; i >= 0; i--) { // 模拟加法操作，从低位到高位遍历
+        if (number[i] < 9) { // 0~8 原地 +1
+            number[i] += 1;
+            return true;
+        } else { // 9置零，下次循环是将高位进1
+            number[i] = 0;
+        }
+    }
+    return false;
+}
+// 直接打印数组将出现[0, 0, 1]这种情况，高位为0不符合阅读习惯，需要自己实现打印函数
+private static void printNumber(int[] number) {
+    if (number == null || number.length == 0) { // 可能出现的边界检查
+        throw new IllegalArgumentException("number is empty");
+    }
+    
+    boolean hasPrint = false;
+    for (int i = 0; i < number.length; i++) { // 从高位向低位遍历
+        if (number[i] != 0 || hasPrint) { // 当遇到第一个不为零时开始打印
+            hasPrint = true;
+            System.out.print(number[i]);
+        }
+    }
+    System.out.println();
+}
+```
+
+# 面试题 9：斐波那契数列
+
+## 题目：
+
+写一个函数，输入n，求斐波那契（Fibonacci）数列的第n项。斐波那契数列的定义如下：
+$$
+f(n)=
+	\begin{cases}
+		0, & \text{$n = 0$}\\
+		1, & \text{$n = 1$}\\
+		f(n - 1) + f(n - 2),& \text{$n > 1$}
+	\end{cases}
+$$
+## 分析
+
+首先想到的是利用递归来解，如：
+
+```java
+public static int fibonacci(int n) {
+    if (n <=0 ) {
+        return 0;
+    } else if (n == 1) {
+        return 1;
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
+```
+
+该解法确实简单，很快就可以实现。让我们来分析一下：
+
+我们以求解$f(10)$为例分析求解过程。想要求$f(10)$就的求$f(9)$和$f(8)$，想要求$f(9)$需要先求$f(8)$和$f(7)$，同样想要求$f(8)$，又得先求$f(7)$和$f(6)$ ... 我们可以以树结构表达这种依赖关系。
+
+![Fibonacci](.\Fibonacci.JPG)
+
+不难发现，书中有很多节点重复，这意味着计算量会随着n的增大而急剧增大，事实上，用递归计算的时间复杂度是以n的指数递增的。我试了一下，当n为45时，就能很明显的发现获得结果需要等待一小会儿了。
+
+## 改进
+
+上面递归代码之所以慢是因为重复计算过多，当我们的递归从小往大计算时，第n次的结果总是前两次之后，而前两次刚好再前面两次已经计算过并记录了。
+
+```java
+public static void main(String args[]) {
+    System.out.println(fibonacci1(1000));
+}
+
+public static int fibonacci1(int n) {
+    int[] result = {0, 1};
+    if (n < 2) {
+        return result[n];
+    }
+    int preNumberOne = 1;
+    int preNumberTwo = 0;
+    int number = 0;
+    for (int i = 2; i <= n; i++) {
+        number = preNumberOne + preNumberTwo;
+        preNumberTwo = preNumberOne;
+        preNumberOne = number;
+    }
+    return number;
+}
+```
+
+## 斐波那契数列的运用：青蛙跳台阶
+
+### 题目
+
+一只青蛙可以跳上1级台阶，也可以跳上2级台阶。求该青蛙跳上一个n级台阶总共有多少种跳法。
+
+### 分析
+
+首先考虑最简单的情况，如果只有一级台阶，青蛙第一次跳的时候，显然只有一种跳法。如果有2级，有两种跳法：一种是跳一级、一种是跳两级。
+
+再看一般情况，假如青蛙跳n级台阶总共有$F{(n)}$ 种跳法，当n > 2 时，第一次有两种不同的选择：1. 只跳1级，此时跳法数据等于后面剩下的n - 1级台阶的跳法数目，即 $ F(n - 1)$。2. 只跳2级，此时跳法数目等于后面剩下的n - 2级台阶的跳法数目，即$ F(n - 2)$ 。因此n级台阶的不同跳法总数为$F(n) = F(n - 1) + F(n - 2)$。不难看出，这就是一个斐波那契数列。
+
+## 斐波那契数列的运用：矩形覆盖
+
+### 题目
+
+我们可以用2 x 1的小矩形横着或者竖着去覆盖更大的矩形。请问用8个 2 x 1的小矩形无重叠地覆盖一个 2 x 8的大巨星，总共有多少种方法？矩形如图：
+
+![fugai](.\fugai.JPG)
+
+### 分析
+
+先把2 x 8的覆盖方法次数记为$F(8)$ ， 用1x2的矩形第一次覆盖到2x8上有两种方式：
+
+1. 竖着盖在最左边，此时的覆盖次数有$F(7)$。 
+2. 横着覆盖最左上角， 此时覆盖次数记为$F(6)$。
+3. 所以，对于2x8的矩形区域，$F(8) = F(7) + F(6)$
+
+显然，又是一个斐波那契数列。
+
+### 结语
+
+斐波那契数列相关题目特征：
+1. 每个步骤有两种不同的操作。
+2. 有0和1两个解。
+3. 经过两个不同操作后，问题规模将会得到不同程度的降低。
+
+
 # 位运算
 
 ## 面试题10：二进制中1的个数
@@ -1590,6 +1915,136 @@ public static int min(int[] arr) {
 请实现一个函数，输入一个整数，输出该数二进制表示中1的个数。例如把9表示称二进制时1001， 有2位是1。因此如果输入9， 该函数输出2。
 
 ### 分析
+
+
+# 面试题 11：数值的整数次方
+
+## 题目
+
+实现函数 `double power(double base, int exponent)`，求base的 exponent次方。不得使用库函数，同时不需要考虑大数问题。
+
+## 分析
+
+因为不用考虑大数问题，所以，这个题看起来很简单。只需要将base累计乘以exponent次就可以了。如果是这样的话，你就掉进陷阱了。该题考查的是考虑问题的全面性。power函数，如果输入小于1，即零和负数时怎么办，如果用累乘的方式，就只考虑到整数的情况。
+
+我们知道，当指数为负数的时候，可以先对指数求绝对值，算出结果后取倒数即是结果。因为需要求倒数，我们就需要考虑是否有可能对0求倒数，如果有，因此产生的异常如何处理？
+
+需要指出的是，由于0的0次方在数学上是没有意义的，因此无论是输出0还是1都是可以接收的，但这都需要和面试官说清楚，表明我们已经考虑到这个边界值了。
+
+## 解：java
+
+```java
+static boolean isInvalidInput = false;
+private static boolean equals(double num1, double num2) {
+    return (num1 - num2 > -0.0000001) && (num1 - num2 < 0.00000001);
+}
+
+private static int absInt(int num) {
+    if (num < 0) {
+        num = -num;
+    }
+    return num;
+}
+
+private static double power(double base, int exponent) {
+    if (equals(base, 0.0)) {
+        isInvalidInput = true; // 表示输入非法
+        return 0.0;
+    }
+    if (equals(base, 1.0) || exponent == 0) { // 如果底数为1， 不用算，返回就好
+        return 1.0;
+    }
+
+    int absExponent = absInt(exponent);
+    double result = 1.0d;
+    for (int i = 0; i < absExponent; i++) {
+        result *= base;
+    }
+    if (exponent < 0) {
+        result = 1.0 / result;
+    }
+    return result;
+}
+
+public static void main(String args[]) {
+    System.out.println(power(2, 0));
+}
+```
+
+需要注意的是，我们在判断浮点型数字是否相等时，不能直接这样判断`base == 0.0`，这是因为在计算机内表示小数时有误差。判断两个小数是否相等，只能判断它们只差的局对峙是不是在一个很小的范围内。如果两个数相差很小，就可以认为它们相等，这是在代码中使用自己实现`equals`的原因。
+
+# 面试题 12：打印1到最大的n位数
+
+## 题目
+
+输入数字n，按顺序打印出从1到最大的n位十进制数。比如输入3，则打印出1、2、3一直到最大的3位数即999。
+
+## 分析
+
+如果不作分析，可能直接就会采用：算出n位数的最大值，然后循环输出就完事儿了。但这个题显然不是这么简单，题目中没有给n做任何限定，如果n的值很大，那么不管是double还是long类型都无法承担存储大数的责任。
+
+在java中处理大数大概有三种方案：
+
+* 使用String模拟大数，需要自己实现加法操作。
+* 使用数组模拟大数，也需要自己实现加法操作。
+* 使用BigDecimal。
+
+本例中，使用int数组来模拟大数操作。
+
+## 解：java
+
+```java
+public static void main(String args[]) {
+    printToMaxNDigits(2);
+}
+public static void printToMaxNDigits(int n) {
+    if (n <= 0) { // 输入边界检查，防止-1、0之类的非法输入
+        return;
+    }
+    int[] number = new int[n];
+    while(increment(number)) { // increment的作用是 + 1，+ 1成功返回true，去打印否则结束循环
+        printNumber(number);
+    }
+}
+private static boolean increment(int[] number) {
+    if (number == null || number.length == 0) { // 可能出现的边界检查
+        throw new IllegalArgumentException("number is empty");
+    }
+
+    for (int i = number.length - 1; i >= 0; i--) { // 模拟加法操作，从低位到高位遍历
+        if (number[i] < 9) { // 0~8 原地 +1
+            number[i] += 1;
+            return true;
+        } else { // 9置零，下次循环是将高位进1
+            number[i] = 0;
+        }
+    }
+    return false;
+}
+// 直接打印数组将出现[0, 0, 1]这种情况，高位为0不符合阅读习惯，需要自己实现打印函数
+private static void printNumber(int[] number) {
+    if (number == null || number.length == 0) { // 可能出现的边界检查
+        throw new IllegalArgumentException("number is empty");
+    }
+    
+    boolean hasPrint = false;
+    for (int i = 0; i < number.length; i++) { // 从高位向低位遍历
+        if (number[i] != 0 || hasPrint) { // 当遇到第一个不为零时开始打印
+            hasPrint = true;
+            System.out.print(number[i]);
+        }
+    }
+    System.out.println();
+}
+```
+
+### 
+
+
+
+
+
+
 
 
 
