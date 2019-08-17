@@ -48,11 +48,11 @@ status_t MediaCodec::onReleaseOutputBuffer(const sp<AMessage> &msg) {
 
 可以看到`backtrace:`下面有crash时的调用栈信息。格式为：
 
-\#编号 pc 异常地址 共享库路径 （函数名）
+> \#编号 pc 异常地址 共享库路径 （函数名）
 
  例1.0：
 
-\#00 pc 00018e90  /system/lib/libc.so (__memcpy_base+185)
+> \#00 pc 00018e90  /system/lib/libc.so (__memcpy_base+185)
 
 所以，示例1.0，可以翻译为：在共享库 */system/lib/libc.so*的*__memcpy_base*函数中报了一个空指针。
 
@@ -285,7 +285,7 @@ native-lib.cpp:11
 
 可以看到，Android studio中编译出来的so，完全没有各种困扰，很直接的指出的异常发生的行号。
 
-原因是，Android studio会在编译是，自动生成附带有符号表的so。
+原因是，Android studio会在编译时，自动生成附带有符号表的so。
 
 ## 其它
 
@@ -302,3 +302,5 @@ LOCAL_CFLAGS := -Wl,-Map=test.map -g
 1、使用addr2line需要附带符号表的so文件。
 
 2、addr2line工具并不是一定能将异常位置定位到行，还需要其它调试手段辅助。
+
+3、如果c/c++库程序是使用Android studio开发，因为生成的so自带符号表，所以使用addr2line工具可以直接定位。
